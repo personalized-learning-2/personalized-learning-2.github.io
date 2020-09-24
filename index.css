@@ -1,0 +1,170 @@
+#home{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+canvas{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#home-img{
+    text-align: right;
+    height: 470px;
+}
+
+#down-arrow{
+    padding-top: 50px;
+    text-align: center;
+
+}
+
+#home-text{
+    padding-top: 30px;
+}
+
+#down-arrow img{
+    height: 35px;
+    width: 35px;
+}
+
+#mentor-img{
+    text-align: left;
+    height: 470px;
+    display: flex;
+    align-items: center;
+}
+
+#map-img{
+    text-align: right;
+    height: 470px;
+    display: flex;
+    align-items: center;
+}
+
+#map-img img{
+    width: 100%;
+}
+
+#home-img img{
+    height: 100%;
+}
+
+#mentor-img img{
+    width: 100%;
+
+}
+
+#home-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+#home-blurb{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.btn-primary{
+    background-color: #3466BB;
+    font-weight: 600;
+    border: none;
+    font-size: .8rem;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.home-section-container{
+    margin: 0;
+}
+
+.home-section{
+    display: flex;
+    align-items: center;
+}
+
+.sub-header{
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+
+#collab-title{
+    text-align: center;
+    padding-bottom: 80px;
+
+}
+
+.collab-text{
+    color: #2E2E2E;
+    display: inline;
+}
+
+.collab-square{
+    box-shadow: 3px 5px 10px rgb(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    height: 300px;
+}
+
+.collab-square:hover{
+    text-decoration: none;
+}
+
+#learnlab-logo-container{
+    padding-top: 60px;
+    padding-bottom: 30px;
+    width: 250px;
+    height: 10px;
+}
+#learnlab-logo{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#cue-logo-container{
+    padding-top: 30px;
+    padding-bottom: 60px;
+    width: 150px;
+    height: 10px;
+}
+#cue-logo{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.pl2-logo{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+#PL2-name{
+    color: #2E2E2E;
+}
+
+#PL2-name:hover{
+    text-decoration: none;
+}
+
+.selected-nav{
+    color: #3466BB;
+}
+
+.collab-header{
+    color: #3466BB;
+    font-weight: 600;
+}
+
+
+

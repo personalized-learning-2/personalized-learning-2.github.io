@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personalized Learning&sup2;</title>
+    <!--jQuery must also be linked for Bootstrap to function-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap" rel="stylesheet">
+    <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--custom css-->
+    <link href="index.css" rel="stylesheet">
+    <link href="general.css" rel="stylesheet">
+    <link href="other-pages.css" rel="stylesheet">
+    <!--custom js-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+    <script src="main.js"></script>
+
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body onload="initialize();">
+    <div id="navigation" class="row align-middle justify-content-center">
+        <div class="col-4">
+            <a id="PL2-name" href="index.html">
+                <img href="index.html" class="pl2-logo" src="images/pl2-logo.svg">
+                Personalized Learning&sup2;
+            </a>
+        </div>
+        <div class="col-2 nav-item all-caps"><a href="covid19-free.html">Use PL&sup2; for Free</a></div>        
+        <div class="col-2 nav-item all-caps"><a href="our-mission.html">Our Mission</a></div>
+        <div class="col-2 nav-item all-caps"><a href="pl2-overview.html">PL&sup2; Overview</a></div>
+       <div class="col-2 nav-item">
+            <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" id="pl2-btn" type="button" class="btn btn-outline-primary all-caps">PL&sup2; APP</button>
+       </div>
+    </div>
+    <div id="home" class="row justify-content-center">
+        <canvas id='canvas' width="3000" height="1300"></canvas>
+        <div id="home-text" class="col-5">
+            <div id="home-title">
+                Personalized Learning&sup2; (PL&sup2;), <br>powered by people and technology
+            </div>
+            <div id="home-blurb">
+                PL&sup2 is a project addressing the opportunity gap for marginalized students through personal mentoring and tutoring with artificial intelligence learning software.
+            </div>
+            <a target="_blank" href="mailto:sekulaconsulting@gmail.com;pl2-app-help@lists.andrew.cmu.edu" class="btn btn-primary btn-sm all-caps">Get Involved</a>
+        </div>
+
+        <div id="home-img" class="col-5"><img src="images/home.png"></div>
+        <div id="down-arrow" class="col-12">
+            <img src="images/down-arrow.svg">
+        </div>
+    </div>
+    <div id="home-sub-1" class="row justify-content-center home-section-container">
+        <div class="col-md-10 row justify-content-between home-section">
+
+            <div id="mentor-img" class="col-5">
+                <img class="" src="images/mentoring.png">
+            </div>
+
+            <div class="col-5">
+                <div class="sub-header">
+                    Mentoring meets technology
+                </div>
+                <div class="sub-blurb">
+                    Personalized mentoring and tutoring in small groups can promote the social, emotional, and motivational conditions that support student success. Learning software, powered by AI, adapts curriculum and content to each student's unique learning speed and style. PL&sup2; combines these two proven approaches to help mentors practice culturally-responsive teaching that is informed by their students' progress in learning software.
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="home-sub-2" class="row justify-content-center home-section-container">
+        <div class="col-md-10 row justify-content-between home-section">
+            <div class="col-md-5">
+                <div class="sub-header">
+                    Piloting in Greater Pittsburgh
+                </div>
+                <div class="sub-blurb">
+                    PL&sup2; is using this combination to support math learning for students in southwestern Pennsylvania. The pilot specifically includes schools with high populations of students of color and/or students impacted by poverty. Once we find the optimal combination to facilitate learning, these new methods can be deployed across different educational software products, subjects, grade levels, and states.
+                </div>
+            </div>
+            <div id="map-img" class="col-md-5">
+                <img src="images/map.png">
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="home-section-container row justify-content-center">
+        <div id="collab-title" class="all-caps col-md-12">A collaboration between</div>
+        <div class="col-md-10 row justify-content-between">
+            <a href="https://learnlab.org/" id="learnlab-square" class="col-md-5 row collab-square justify-content-center">
+                <div class="col-md-11 row justify-content-center">
+                    <div id="learnlab-logo-container">
+                        <img id="learnlab-logo" class="col-md-12" src="images/learnlab-logo.png">
+                    </div>
+                    <div class="col-md-12 collab-text">
+                        <div class="inline collab-header">Learnlab at Carnegie Mellon University,</div>
+                        <div class="collab-text">a national hub for research and development of ed tech, artificial intelligence, and learning science</div>
+                    </div>
+                </div>
+            </a>
+            <a href="https://www.cue.pitt.edu/" id="cue-square" class="col-md-5 row collab-square justify-content-center">
+                <div class="col-md-11 row justify-content-center">
+                    <div id="cue-logo-container">
+                        <img id="cue-logo" class="col-md-12" src="images/cue-logo.png">
+                    </div>
+                    <div class="col-md-12 collab-text">
+                        <div class="inline collab-header">The University of Pittsburgh Center for Urban Education,</div>
+                        <div class="collab-text">
+                         a nationally recognized center of excellence for research and service in urban education</div>
+                     </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" role="dialog" id="covid-modal">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">COVID-19 Response</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>We are offering our app, PL&sup2;, for free for parents and teachers to use to support their children and students as they learn math at home online. We are partnering with MATHia, an educational technology platform from Carnegie Learning, who is offering free access to their grades 6-12 math resources during the COVID-19 pandemic.</p>
+            <p>Details can be found on our <a href="covid19-free.html">Use PL&sup2; for Free</a> tab.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<div class="footer row justify-content-center">
+        <div id="footer-email" class="col-md-4 inline">Interested in learning more? Want to get involved? Email Anne Sekula at <a target="_blank" href="mailto:sekulaconsulting@gmail.com;pl2-app-help@lists.andrew.cmu.edu" class="regular inline footer-link">sekulaconsulting@gmail.com</a></div>
+        <a target="_blank" href="https://www.cmu.edu/legal/" class="col-md-2 footer-item regular footer-link">Terms of Use</a>
+        <div class="col-md-3 footer-item">Personalized Learning&sup2; &copy; 2020</div>
+        <div class="col-md-2 footer-item">
+            Supported by&nbsp;&nbsp;
+            <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/"><img id="czi-logo" src="images/czi-logo.svg"></a>
+        </div>
+    </div>
+
+</body>
+</html>
