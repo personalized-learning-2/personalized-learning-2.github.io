@@ -1,170 +1,188 @@
-#home{
-    padding-top: 40px;
-    display: flex;
-    align-items: center;
-    margin: 0;
-    overflow: hidden;
+#home {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  overflow: hidden;
 }
 
-canvas{
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: -1;
+.pl2-primary {
+  color: #3466bb;
+  background-color: white;
 }
 
-#home-img{
-    text-align: right;
-    height: 470px;
+.pl2-primary:focus,
+.pl2-primary:hover {
+  color: white;
+  background-color: #3466dd;
 }
 
-#down-arrow{
-    padding-top: 50px;
-    text-align: center;
-
+canvas {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
-#home-text{
-    padding-top: 30px;
+#home-img {
+  text-align: right;
+  height: 470px;
 }
 
-#down-arrow img{
-    height: 35px;
-    width: 35px;
+#down-arrow {
+  padding-top: 50px;
+  text-align: center;
 }
 
-#mentor-img{
-    text-align: left;
-    height: 470px;
-    display: flex;
-    align-items: center;
+#home-text {
+  padding-top: 30px;
 }
 
-#map-img{
-    text-align: right;
-    height: 470px;
-    display: flex;
-    align-items: center;
+#down-arrow img {
+  height: 35px;
+  width: 35px;
 }
 
-#map-img img{
-    width: 100%;
+#mentor-img {
+  text-align: left;
+  height: 470px;
+  display: flex;
+  align-items: center;
 }
 
-#home-img img{
-    height: 100%;
+#map-img {
+  text-align: right;
+  height: 470px;
+  display: flex;
+  align-items: center;
 }
 
-#mentor-img img{
-    width: 100%;
-
+#map-img img {
+  width: 100%;
 }
 
-#home-title{
-    font-weight: 600;
-    font-size: 1.5rem;
+#home-img img {
+  height: 100%;
 }
 
-#home-blurb{
-    padding-top: 30px;
-    padding-bottom: 30px;
+#mentor-img img {
+  width: 100%;
 }
 
-.btn-primary{
-    background-color: #3466BB;
-    font-weight: 600;
-    border: none;
-    font-size: .8rem;
-    padding-left: 15px;
-    padding-right: 15px;
+#home-title {
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
-.home-section-container{
-    margin: 0;
+#home-blurb {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-.home-section{
-    display: flex;
-    align-items: center;
+.btn-primary {
+  background-color: #3466bb;
+  font-weight: 600;
+  border: none;
+  font-size: 0.8rem;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.sub-header{
-
-    font-size: 1.3rem;
-    font-weight: 600;
-    padding-bottom: 30px;
+.home-section-container {
+  margin: 0;
 }
 
-
-#collab-title{
-    text-align: center;
-    padding-bottom: 80px;
-
+.home-section {
+  display: flex;
+  align-items: center;
 }
 
-.collab-text{
-    color: #2E2E2E;
-    display: inline;
+.sub-header {
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-bottom: 30px;
 }
 
-.collab-square{
-    box-shadow: 3px 5px 10px rgb(0, 0, 0, 0.1);
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 20px;
-    height: 300px;
+#collab-title {
+  text-align: center;
+  padding-bottom: 80px;
 }
 
-.collab-square:hover{
-    text-decoration: none;
+.collab-text {
+  color: #2e2e2e;
+  display: inline;
 }
 
-#learnlab-logo-container{
-    padding-top: 60px;
-    padding-bottom: 30px;
-    width: 250px;
-    height: 10px;
+.collab-square {
+  box-shadow: 3px 5px 10px rgb(0, 0, 0, 0.1);
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  height: 300px;
 }
-#learnlab-logo{
+
+.collab-square:hover {
+  text-decoration: none;
+}
+
+#learnlab-logo-container {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  width: 250px;
+  height: 10px;
+}
+#learnlab-logo {
   display: block;
   width: 100%;
   height: auto;
 }
 
-#cue-logo-container{
-    padding-top: 30px;
-    padding-bottom: 60px;
-    width: 150px;
-    height: 10px;
+#cue-logo-container {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  width: 150px;
+  height: 10px;
 }
-#cue-logo{
+#cue-logo {
   display: block;
   width: 100%;
   height: auto;
 }
 
-.pl2-logo{
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
+.pl2-logo {
+  height: 36px;
+  width: 240px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
-#PL2-name{
-    color: #2E2E2E;
+.nav-item {
+  text-align: center;
+  font-size: 0.8rem;
 }
 
-#PL2-name:hover{
-    text-decoration: none;
+.nav-item a {
+  color: #000;
 }
 
-.selected-nav{
-    color: #3466BB;
+.nav-item a:hover {
+  color: #3466bb;
+  text-decoration: none;
 }
 
-.collab-header{
-    color: #3466BB;
-    font-weight: 600;
+#PL2-name {
+  color: #2e2e2e;
 }
 
+#PL2-name:hover {
+  text-decoration: none;
+}
 
+.selected-nav {
+  color: #3466bb;
+}
 
+.collab-header {
+  color: #3466bb;
+  font-weight: 600;
+}

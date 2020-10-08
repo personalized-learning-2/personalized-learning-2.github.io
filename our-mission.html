@@ -15,30 +15,66 @@
     <link href="other-pages.css" rel="stylesheet">
 </head>
 <body>
-    <div id="navigation" class="row align-middle justify-content-center">
-        <div class="col-4">
-            <a id="PL2-name" href="index.html">
-                <img href="index.html" class="pl2-logo" src="images/pl2-logo.svg">
-                Personalized Learning&sup2;
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5">
+        <a class="navbar-brand" href="index.html">
+          <img
+            height="36"
+            width="240"
+            class="pl2-logo"
+            style="margin-bottom: 10px"
+            alt="PL2"
+            src="images/pl2-logo.svg"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="covid19-free.html"
+                >USE PL&sup2;
+                <!-- <span class="sr-only">(current)</span> --></a
+              >
+            </li>
+  
+            <li class="nav-item active">
+              <a class="nav-link" href="our-mission.html">OUR MISSION </a>
+            </li>
+  
+            <li class="nav-item mr-lg-4">
+              <a class="nav-link" href="pl2-overview.html">PL&sup2; OVERVIEW</a>
+            </li>
+  
+            <button
+              onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;"
+              class="btn btn-outline-primary pl2-primary"
+              type="submit"
+            >
+              Log In
+            </button>
+          </ul>
         </div>
-        <div class="col-2 nav-item all-caps"><a href="covid19-free.html">Use PL&sup2; for Free</a></div>                
-        <div class="col-2 nav-item all-caps selected-nav">Our Mission</div>
-        <div class="col-2 nav-item all-caps"><a href="pl2-overview.html">PL&sup2; Overview</a></div>
-       <div class="col-2 nav-item">
-            <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" id="pl2-btn" type="button" class="btn btn-outline-primary all-caps">PL&sup2; APP</button>
-       </div>
-    </div>
+      </nav>
 
 
     <div id="" class="row justify-content-center section-container">
         <div class="col-md-10 row justify-content-between section">
 
-            <div id="bridging-img" class="col-5">
+            <div id="bridging-img" class="col-md-5">
                 <img src="images/bridging.png">
             </div>
 
-            <div class="col-6">
+            <div class="col-md-5">
                 <div class="blue-header">
                     Bridging Opportunity Gaps in Urban School Contexts
                 </div>
@@ -90,6 +126,18 @@
                         <div class="school-text">PL&sup2; is helping parents engage in their children's learning outside of school and supporting tutors during the school day.</div>
                     </div>
                 </a>
+                <a target="_blank" href="http://hcvpgh.org"class="col-md-5 pilot-square">
+                    <div class="square-text">
+                        <div class="school-header">At Homewood Children's Village,</div>
+                        <div class="school-text">PL&sup2; is helping Americorps tutors engage with their student's in new and more meaningful ways.</div>
+                    </div>
+                </a>
+                <a target="_blank" href="https://www.bgcwpa.org"class="col-md-5 pilot-square">
+                    <div class="square-text">
+                        <div class="school-header">At Boys and Girls Clubs of Western Pennsylvania,</div>
+                        <div class="school-text">PL&sup2; is helping Americorps tutors engage with their student's in new and more meaningful ways</div>
+                    </div>
+                </a>
             </div>
         </div>
         
@@ -111,14 +159,38 @@
     </div>
 
 
-<div class="footer row justify-content-center">
-        <div id="footer-email" class="col-md-4 inline">Interested in learning more? Want to get involved? Email Anne Sekula at <a target="_blank" href="mailto:sekulaconsulting@gmail.com;pl2-app-help@lists.andrew.cmu.edu" class="regular inline footer-link">sekulaconsulting@gmail.com</a></div>
-        <a target="_blank" href="https://www.cmu.edu/legal/" class="col-md-2 footer-item regular footer-link">Terms of Use</a>
-        <div class="col-md-3 footer-item">Personalized Learning&sup2; &copy; 2020</div>
-        <div class="col-md-2 footer-item">
-            Supported by&nbsp;&nbsp;
-            <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/"><img id="czi-logo" src="images/czi-logo.svg"></a>
+    <div class="footer row">
+        <div class="col-md-2"></div>
+  
+        <div id="footer-email" class="col-md-3">
+          <a
+            target="_blank"
+            href="mailto:shivanggupta6@gmail.com; pl2-app-help@lists.andrew.cmu.edu"
+            class="regular inline footer-link"
+            >Contact Us</a
+          >
+          <a
+            target="_blank"
+            href="https://www.cmu.edu/legal/"
+            class="col-md-2 footer-item regular footer-link"
+            >Terms of Use</a
+          >
         </div>
-    </div>
+  
+        <div class="col-md-3 footer-item mt-2 mt-md-0">
+          Personalized Learning&sup2; &copy; 2020
+        </div>
+  
+        <div class="col-md-3 footer-item mt-2 mt-md-0">
+          Supported by&nbsp;&nbsp;
+          <a
+            target="_blank"
+            href="https://chanzuckerberg.com/grants-ventures/grants/"
+            ><img id="czi-logo" src="images/czi-logo.svg"
+          /></a>
+        </div>
+      </div>
+    
+
 </body>
 </html>
