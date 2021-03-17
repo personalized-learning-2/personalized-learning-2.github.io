@@ -186,3 +186,40 @@ canvas {
   color: #3466bb;
   font-weight: 600;
 }
+
+.jumbotron {
+  color: white;
+  background-image:url("images/image 54.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grey-image-overlay {
+  color: white;
+  background-image:url("images/Rectangle 261.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel-indicators {
+    bottom: -10px !important;
+}
+.carousel-indicators > li {
+   border-radius: 50%;
+   background: #c1c2c2;
+   height: 1rem;
+   width: 1rem;
+}
+.carousel-indicators > li.active {
+   background: #6c757d!important;
+}
+
+.text-blue {
+    color: #3466BB;
+}
+
+.ed-tech-images > div {
+    display: flex;
+    align-items: center;
+}

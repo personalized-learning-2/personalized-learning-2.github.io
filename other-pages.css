@@ -114,3 +114,73 @@
 .col-md-5 p {
   font-style: italic;
 }
+
+.partner-container > .row > div {
+    border-right: 1px solid #F0F0F0;
+
+    align-items: center;
+    display: flex;
+}
+.partner-container > .row > div:last-child {
+    border-right: 0px;
+}
+.partner-container hr {
+    border-top: 1px solid #F0F0F0;
+}
+.partner-container img {
+    max-height: 8rem;
+    max-width: 100%;
+}
+.partner-name {
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #6c757d;
+    width: 100%;
+}
+
+
+.team-name,
+.media-title {
+    font-weight: 700;
+}
+.team img {
+    max-width: 100%;
+    max-height: 10em;
+    margin-bottom: 0.5rem;
+    margin-top: 1rem;
+}
+.team-affiliation {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+
+.in-media img {
+    max-width: 100%;
+    max-height: 20em;
+    margin-bottom: 1rem;
+}
+.in-media .row > div > div {
+    margin-bottom: .5rem;
+}
+.media-date {
+    text-decoration: uppercase;
+    color: #3466BB;
+}
+
+.accordion .fa-angle-down,
+.accordion .fa-angle-up {
+    float: right;
+}
+.accordion .fa-angle-down{
+    display: none;
+}
+.accordion .fa-angle-up {
+    display: inline-block;
+}
+.accordion .collapsed .fa-angle-up {
+    display: none;
+}
+.accordion .collapsed .fa-angle-down {
+    display: inline-block;
+}
