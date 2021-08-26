@@ -92,10 +92,14 @@ body {
   font-weight: 400;
 }
 
-#czi-logo {
+#czi-logo,
+#rkmf-logo {
   height: 2.5rem;
   width: 2.5rem;
   margin-top: 1rem;
+}
+#rkmf-logo {
+    margin-left: 1.0rem;
 }
 
 .regular {
