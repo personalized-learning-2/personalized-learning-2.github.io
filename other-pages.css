@@ -18,9 +18,9 @@
 
 .release-note-img,
 .feature-img {
-  padding-top: 20px;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  padding-top: 15px;  
 }
 
 .feature-img img {
@@ -29,8 +29,13 @@
 }
 
 .release-note-img img {
-  width: 55%;
-  background-color: #f4f6f8;
+    width: 55%;
+    background-color: #f4f6f8;
+    border: #3466bb 1px solid;
+}
+
+.img-35 {
+  width: 35% !important;
 }
 
 .release-notes {
@@ -183,4 +188,8 @@
 }
 .accordion .collapsed .fa-angle-down {
     display: inline-block;
+}
+
+.section-list p {
+    font-weight: 600;
 }
