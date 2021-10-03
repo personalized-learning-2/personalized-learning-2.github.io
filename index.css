@@ -188,37 +188,43 @@ canvas {
 
 .jumbotron {
   color: white;
-  background-image:url("images/image 54.png");
+  background-image: url("images/image 54.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .grey-image-overlay {
   color: white;
-  background-image:url("images/Rectangle 261.png");
+  background-image: url("images/Rectangle 261.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .carousel-indicators {
-    bottom: -10px !important;
+  bottom: -10px !important;
 }
 .carousel-indicators > li {
-   border-radius: 50%;
-   background: #c1c2c2;
-   height: 1rem;
-   width: 1rem;
+  border-radius: 50%;
+  background: #c1c2c2;
+  height: 1rem;
+  width: 1rem;
 }
 .carousel-indicators > li.active {
-   background: #6c757d!important;
+  background: #6c757d !important;
 }
 
 .text-blue {
-    color: #3466BB;
+  color: #3466bb;
 }
 
 .ed-tech-images > div {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.card.partner {
+  border: none;
+  background: #f1f4fa;
+  /* height: 180px; */
 }

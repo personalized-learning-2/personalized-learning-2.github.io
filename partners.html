@@ -1,352 +1,205 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Personalized Learning&sup2;</title>
-    <!--jQuery must also be linked for Bootstrap to function-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!--fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> -->
-
-    <!--custom css-->
-    <link href="index.css" rel="stylesheet" />
-    <link href="general.css" rel="stylesheet" />
-    <link href="other-pages.css" rel="stylesheet" />
-
-    <!--custom js-->
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
     <script src="main.js"></script>
-
-    <!-- <link rel="icon" href="favicon.ico" /> -->
-    <!-- Favicon Code -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>$("head").load("head.html");</script>
 </head>
 
 <body onload="initialize();">
-    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5">
-        <a class="navbar-brand" href="index.html">
-            <img
-              height="36"
-              width="240"
-              class="pl2-logo"
-              style="margin-bottom: 10px"
-              alt="PL2"
-              src="images/pl2-logo.svg"
-            />
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">
-                        Overview
-                    </a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="partners.html">Partners</a>
-                </li>
-                <li class="nav-item mr-lg-4">
-                    <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
-                    Log In
-                </button>
-            </ul>
-        </div>
-    </nav>
+    <div id="header"></div>
 
     <div class="container-fluid p-0">
 
-        <div class="row h1 p-lg-5 text-white" style="background:#3466BB;">
+        <div class="row p-lg-5 text-black">
             <div class="col p-5">
-                <h1 class="h3 mb-4">Partners</h1>
-                <h1 class="display-4 d-none d-lg-block">
+                <h1 id="page-title" class="mb-4">Partners</h1>
+                <h3 class="h3 d-none d-lg-block">
                     Through our partners, PL&sup2; focuses on improving learning in urban and low-income settings.
-                </h1>
-                <h1 class="h1 d-lg-none">
+                </h3>
+                <h3 class="h3 d-lg-none">
                     Through our partners, PL&sup2; focuses on improving learning in urban and low-income settings.
-                </h1>
+                </h3>
             </div>
         </div>
+        
 
-        <div class="row mt-5 mb-3">
+        <div class="row px-5 pt-5 pb-3" style="background:#F1F4FA;">
             <div class="col mx-auto">
-                <h1 class="h2 text-uppercase text-center">School Partners</h1>
+                <h1 class="h2 pl-5">Institutional Partners</h1>
             </div>
         </div>
-
-        <div class="row px-lg-5">
-            <div class="container-fluid partner-container px-lg-5 text-center">
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.cue.pitt.edu/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/pps.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Cue Ready to Learn /PPS</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.bgcwpa.org/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/bgc.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Boys and Girls Club of Western Pennsylvania</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://hcvpgh.org/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/homewood-childrens-village.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Homewood Children's Village</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.efsd.net/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/ef.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Elizabeth Forward School District</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.sasd.k12.pa.us/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/shaler.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Shaler Area School District</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.propelschools.org/" target="_blank" class="mx-auto">
-                            <img src="images/partner_logos/propel.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Propel Charter Schools</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
+        
+        <div class="row p-5 justify-content-center" style="background: #F1F4FA;">
+        
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+          <div class="card partner  p-3 m-3">
+            <a href="https://www.cue.pitt.edu/" target="_blank" class="m-auto d-flex h-50">
+                <img id="cue-logo" src="images/partner_logos/cue.png" class="card-img-top h-100 partner" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold">Cue Ready to Learn /PPS</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+          <div class="card partner  p-3 m-3">
+                <a href="https://www.bgcwpa.org/" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/partner_logos/bgc.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Boys and Girls Club of Western Pennsylvania</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+          <div class="card partner  p-3 m-3">
+                <a href="https://hcvpgh.org/" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/partner_logos/homewood-childrens-village.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Homewood Children's Village</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+              <div class="card partner  p-3 m-3">
+                <a href="https://www.efsd.net/" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/partner_logos/ef.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold">Elizabeth Forward School District</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+        </div>
+    
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+              <div class="card partner  p-3 m-3">
+                    <a href="https://www.sasd.k12.pa.us/" target="_blank" class="m-auto d-flex h-50">
+                        <img src="images/partner_logos/shaler.png" class="card-img-top h-100 partner" />
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Shaler Area School District</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+              </div>
+        </div>
+
+              <!-- <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch">
+              <div class="card partner  p-3 m-3">
+                    <a href="https://www.propelschools.org/" target="_blank" class="m-auto d-flex h-50">
+                        <img src="images/partner_logos/propel.png" class="card-img-top h-100 partner" />
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold">Propel Charter Schools</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div> -->
         </div>
 
 
-
-        <div class="row mt-5 mb-3">
-            <div class="col">
-                <h1 class="h2 text-uppercase text-center">Math Ed-Tech Tool Partners</h1>
+        <div class="row px-5 pt-5 pb-3">
+            <div class="col mx-auto">
+                <h1 class="h2 pl-5">Math Ed-Tech Partners</h1>
             </div>
+        </div>
+        
+        <div class="row p-5">
+        
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+          <div class="card p-3 m-3 border-0">
+            <a href="https://www.aleks.com/" target="_blank" class="m-auto d-flex h-50">
+                <img src="images/edtechs/aleks.png" class="card-img-top h-100 partner" />
+            </a>
+            <div class="card-body">
+              <h5 class="card-title font-weight-bold text-center">Assessment and Learning in Knowledge Spaces</h5>
+              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+          <div class="card p-3 m-3 border-0">
+                <a href="images/edtechs/dreambox.png" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/edtechs/dreambox.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold text-center">Dreambox Learning</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+          </div>
+        </div>
+
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+          <div class="card p-3 m-3 border-0">
+                <a href="https://www.edmentum.com/products/exact-path" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/edtechs/edmentum.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold text-center">Edmentum Exact Path</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+              </div>
+        </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+              <div class="card p-3 m-3 border-0">
+                <a href="https://www.carnegielearning.com/solutions/math/mathia/" target="_blank" class="m-auto d-flex h-50">
+                    <img src="images/edtechs/carnegie_learning.png" class="card-img-top h-100 partner" />
+                </a>
+                <div class="card-body">
+                  <h5 class="card-title font-weight-bold text-center">MATHia</h5>
+                  <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                </div>
+              </div>
+        </div>
+    
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+              <div class="card p-3 m-3 border-0">
+                    <a href="https://www.imaginelearning.com/" target="_blank" class="m-auto d-flex h-50">
+                        <img src="images/edtechs/imagine-learning.png" class="card-img-top h-100 partner" />
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold text-center">Imagine LEARNING</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+              </div>
+        </div>
+
+              <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-stretch justify-content-center">
+              <div class="card p-3 m-3 border-0">
+                    <a href="https://www.esparklearning.com/" target="_blank" class="m-auto d-flex h-50">
+                        <img src="images/edtechs/espark.png" class="card-img-top h-100 partner" />
+                    </a>
+                    <div class="card-body">
+                      <h5 class="card-title font-weight-bold text-center">eSPARK LEARNING</h5>
+                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                    </div>
+                  </div>
+                </div>
         </div>
 
 
-        <div class="row px-lg-5">
-            <div class="container-fluid partner-container px-lg-5 text-center">
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.aleks.com/" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/aleks.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Assessment and Learning in Knowledge Spaces</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.dreambox.com/" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/dreambox.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">dreambox learning</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.edmentum.com/products/exact-path" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/edmentum.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Edmentum <br/>exact path</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.carnegielearning.com/solutions/math/mathia/" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/carnegie_learning.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">MATHIA</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.imaginelearning.com/" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/imagine-learning.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">Imagine LEARNING</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-                <hr>
-                <div class="row mt-5 mb-3">
-                    <div class="col-6">
-                        <a href="https://www.esparklearning.com/" target="_blank" class="mx-auto">
-                            <img src="images/edtechs/espark.png" class="img-fluid" />
-                        </a>
-                    </div>
-                    <div class="col-6">
-                        <div class="partner-name">eSPARK LEARNING</div>
-                    </div>
-                    <!-- <div class="col-4">
-                        <div class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
+        
 
 
 
         <div class="row mt-5 mb-3 px-5">
-            <div class="col mx-auto">
+            <div class="col mx-auto text-center">
                 <h1 class="h2">Contact us to add your tool to the list.</h1>
             </div>
         </div>
 
-
-        <div class="footer row px-2 px-lg-5">
-            <div id="footer-email" class="col-md-3">
-                <div class="mb-3">
-                    <a target="_blank" href="mailto:shivangg@andrew.cmu.edu; help@personalizedlearning2.org" class="regular inline footer-link">Contact Us</a>
-                </div>
-                <div class="mb-3">
-                    <a href="faq.html" class="footer-item regular footer-link">FAQs</a>
-                </div>
-                <div class="mb-3">
-                    <a target="_blank" href="https://www.cmu.edu/legal/" class="footer-item regular footer-link">Terms of Use</a>
-                </div>
-            </div>
-            <div class="col-md-6 footer-item mt-2 mt-md-0">
-                <div>Collaboration between</div>
-                <div class="footer-collaborator-images my-3">
-                    <a href="https://learnlab.org/" target="_blank"><img src="images/learnlab-logo-white.png" /></a>
-                    <a href="https://cmu.edu/" target="_blank"><img src="images/cmu-logo.png" /></a>
-                    <a href="https://remakelearning.org/" target="_blank"><img src="images/remake-logo.png" /></a>
-                    <a href="https://www.cue.pitt.edu/" target="_blank"><img src="images/pitt-logo.png" /></a>
-                </div>
-                <div>Carnegie Mellon University &copy; 2021</div>
-            </div>
-
-            <div class="col-md-3 footer-item mt-2 mt-md-0">
-                <div class="footer-item mt-2 mt-md-0">
-                    <div>Supported by</div>
-                    <div>
-                        <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/">
-                            <img id="czi-logo" src="images/czi-logo.svg" />
-                        </a>
-                        <a target="_blank" href="https://www.rkmf.org/">
-                            <img id="rkmf-logo" src="images/RKMellonLogo.PNG" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
     </div> <!-- End Container -->
+    <div id="footer"></div>
 </body>
 </html>
