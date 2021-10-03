@@ -54,9 +54,8 @@ body {
   color: #000;
 }
 .nav-item.active {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 .inline {
   display: inline;
@@ -83,6 +82,14 @@ body {
     font-size: 0.85rem;
 }*/
 
+.footer-new {
+  background-color: #3466bb;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 60px;
+}
+
 #footer-email {
   font-size: 0.85rem;
 }
@@ -94,12 +101,12 @@ body {
 
 #czi-logo,
 #rkmf-logo {
-  height: 2.5rem;
-  width: 2.5rem;
-  margin-top: 1rem;
+  height: 3rem;
+  width: 3rem;
+  /* margin-top: 1rem; */
 }
 #rkmf-logo {
-    margin-left: 1.0rem;
+  margin-left: 1rem;
 }
 
 .regular {
@@ -116,9 +123,17 @@ body {
 }
 
 .footer-collaborator-images img {
-    height: 2.5rem;
-    margin-right: 0.5rem;
+  height: 2.5rem;
+  margin-right: 0.5rem;
 }
-.footer-collaborator-images img[src='images/learnlab-logo-white.png'] {
-    height: 1.6rem; /** Not sure why, but the LL logo appears larger than others */
+.footer-collaborator-images img[src="images/learnlab-logo-white.png"] {
+  height: 1.6rem; /** Not sure why, but the LL logo appears larger than others */
+}
+
+.prez-card {
+  background: white;
+}
+
+#cue-logo {
+  max-height: 170px;
 }
