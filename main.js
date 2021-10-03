@@ -31,3 +31,17 @@ function initialize() {
         });
     } catch(err) {}
 }
+
+function pageNavSetup() {
+
+  $(document).ready(function() {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+
+  $(window).on("load", function() {
+    selectedPage = $("#page-title").text().toLowerCase();
+    $("#"+selectedPage+"-nav").addClass('active');
+    $(this).scrollTop(0);
+  });
+}
