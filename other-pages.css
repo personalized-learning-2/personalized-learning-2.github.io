@@ -20,7 +20,7 @@
 .feature-img {
   text-align: center;
   padding-bottom: 15px;
-  padding-top: 15px;  
+  padding-top: 15px;
 }
 
 .feature-img img {
@@ -29,9 +29,9 @@
 }
 
 .release-note-img img {
-    width: 55%;
-    background-color: #f4f6f8;
-    border: #3466bb 1px solid;
+  width: 55%;
+  background-color: #f4f6f8;
+  border: #3466bb 1px solid;
 }
 
 .img-35 {
@@ -121,75 +121,73 @@
 }
 
 .partner-container > .row > div {
-    border-right: 1px solid #F0F0F0;
+  border-right: 1px solid #f0f0f0;
 
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 .partner-container > .row > div:last-child {
-    border-right: 0px;
+  border-right: 0px;
 }
 .partner-container hr {
-    border-top: 1px solid #F0F0F0;
+  border-top: 1px solid #f0f0f0;
 }
 .partner-container img {
-    max-height: 8rem;
-    max-width: 100%;
+  max-height: 8rem;
+  max-width: 100%;
 }
 .partner-name {
-    text-transform: uppercase;
-    font-weight: 300;
-    color: #6c757d;
-    width: 100%;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #6c757d;
+  width: 100%;
 }
-
 
 .team-name,
 .media-title {
-    font-weight: 700;
+  font-weight: 700;
 }
 .team img {
-    max-width: 100%;
-    max-height: 10em;
-    margin-bottom: 0.5rem;
-    margin-top: 1rem;
+  max-width: 100%;
+  max-height: 10em;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
 }
 .team-affiliation {
-    font-size: 0.9rem;
-    margin-top: 0.5rem;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
 }
-
 
 .in-media img {
-    max-width: 100%;
-    max-height: 20em;
-    margin-bottom: 1rem;
+  max-width: 100%;
+  max-height: 20em;
+  margin-bottom: 1rem;
 }
 .in-media .row > div > div {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .media-date {
-    text-decoration: uppercase;
-    color: #3466BB;
+  text-decoration: uppercase;
+  color: #3466bb;
 }
 
 .accordion .fa-angle-down,
 .accordion .fa-angle-up {
-    float: right;
+  float: right;
 }
-.accordion .fa-angle-down{
-    display: none;
+.accordion .fa-angle-down {
+  display: none;
 }
 .accordion .fa-angle-up {
-    display: inline-block;
+  display: inline-block;
 }
 .accordion .collapsed .fa-angle-up {
-    display: none;
+  display: none;
 }
 .accordion .collapsed .fa-angle-down {
-    display: inline-block;
+  display: inline-block;
 }
 
 .section-list p {
-    font-weight: 600;
+  font-weight: 600;
 }
