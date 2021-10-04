@@ -1,118 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Personalized Learning&sup2;</title>
-    <!--jQuery must also be linked for Bootstrap to function-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-    <!--fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> -->
-
-    <!--custom css-->
-    <link href="index.css" rel="stylesheet" />
-    <link href="general.css" rel="stylesheet" />
-    <link href="other-pages.css" rel="stylesheet" />
-
-    <!--custom js-->
-    <!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
     <script src="main.js"></script>
-
-    <!-- <link rel="icon" href="favicon.ico" /> -->
-    <!-- Favicon Code -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>$("head").load("head.html");</script>
+    
 </head>
 
 <body onload="initialize();">
-    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5">
-        <a class="navbar-brand" href="index.html">
-            <img
-              height="36"
-              width="240"
-              class="pl2-logo"
-              style="margin-bottom: 10px"
-              alt="PL2"
-              src="images/pl2-logo.svg"
-            />
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">
-                        Overview
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="partners.html">Partners </a>
-                </li>
-                <li class="nav-item mr-lg-4">
-                    <a class="nav-link" href="about-us.html">About Us</a>
-                </li>
-                <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
-                    Log In
-                </button>
-            </ul>
+    <div id="header"></div>
+
+    <div class="container-fluid px-sm-2 p-md-0">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col">
+                    <h1 class="font-weight-bold mt-5" style="font-size:3rem;">Personalized Learning&sup2;</h1>
+                        <p class="h3" style="margin-top:3rem;">
+                            Addressing the opportunity gap for marginalized students through personalized
+                            mentoring and tutoring with artificial intelligence learning software
+                        </p>
+                        <a href="#newsletter" class="btn btn-outline-primary pl2-primary mt-3">
+                            Sign Up for Newsletters
+                        </a>
+                </div>
+            </div>
+            <div class="row align-items-center my-5">
+                <div class="col-12 col-md-6">
+                    <img src="images/undraw/undraw_1_desk.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h2>A platform that does XYZ.</h2>
+                    <br>
+                    <p>Sit eros, vitae nunc integer dictumst mauris, ut consectetur cras. A ultricies quis nunc, scelerisque sed lacus. Tempus consectetur fringilla tristique nec urna, in tristique lacinia vitae. Eleifend duis eget eget amet aliquam. Eget pellentesque ullamcorper augue sit nec amet, faucibus at auctor. Consequat ut rhoncus eleifend vitae adipiscing pellentesque dictum. Blandit magna sed massa scelerisque a. Sed fames lacus pretium risus aliquam non. Metus, iaculis penatibus dui enim amet, massa sollicitudin egestas convallis. Nullam ac malesuada mi eu sagittis. Tempor blandit tellus scelerisque faucibus ut.</p>
+                </div>
+            </div>
+            <div class="row align-items-center my-5">
+                <div class="col">
+                    <h2>Mentoring Professional Development and Providing Resources</h2>
+                    <br>
+                    <p>Personalized training and resources for continuous/on-the-job development for tutors, teachers, caregivers and mentors. The Resource Assistant helps mentors identify and diagnose learner challenges and recommends appropriate resources to help.</p>
+                </div>
+                <div class="col-12 col-md-6 justify-content-end">
+                    <img src="images/undraw/undraw_2_mentor.png" class="img-fluid" />
+                </div>
+            </div>
+            <div class="row align-items-center my-5">
+                <div class="col-12 col-md-6">
+                    <img src="images/undraw/undraw_3_laptop.png" class="img-fluid" />
+                </div>
+                <div class="col">
+                    <h2>Providing Personalization Tools and Support</h2>
+                    <br>
+                    <p>PL² syncs with math learning software to provide mentors with student effort, progress and social-emotional-motivational status and enable personalized goal setting.</p>
+                </div>
+            </div>
+
+
         </div>
-    </nav>
 
-    <!-- <div id="navigation" class="row align-middle justify-content-center">
-        <div class="col-4">
-             <a id="PL2-name" href="index.html">
-                <img href="index.html" class="pl2-logo" src="images/pl2-logo.svg">
-                Personalized Learning&sup2;
-            </a>             <img href="index.html" class="pl2-logo img-responsive" src="images/pl2-logo.svg">
-        </div>
-        <div class="col-2 nav-item all-caps"><a href="covid19-free.html">Use PL&sup2; for Free</a></div>
-        <div class="col-2 nav-item all-caps"><a href="our-mission.html">Our Mission</a></div>
-        <div class="col-2 nav-item all-caps"><a href="pl2-overview.html">PL&sup2; Overview</a></div>
-       <div class="col-2 nav-item">
-            <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" id="pl2-btn" type="button" class="btn btn-outline-primary all-caps">PL&sup2; APP</button>
-       </div>
-    </div> -->
-    <div class="container-fluid p-0">
 
-        <div class="row justify-content-center jumbotron p-0 mx-0 mb-0">
+
+
+
+        <!-- <div class="row justify-content-center jumbotron p-0 mx-0 mb-0">
             <div class="grey-image-overlay">
                 <div class="col-xl-8 col-lg-10 mx-auto text-center pt-5 pb-5">
                     <h1 class="font-weight-bold" style="margin-top:6rem;font-size:3rem;">Personalized Learning&sup2;</h1>
@@ -221,67 +173,140 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
-        </div>
-        <script>
+        </div> -->
+        <!-- <script>
             $('#quote-carousel').carousel({
                 interval: 10000
             });
-        </script>
+        </script> -->
 
-        <div style="background: #E5ECF3;">
-
-            <div class="row mx-0 pt-5 px-lg-5 text-center">
-                <div class="col-12"><h1 class="h3">Impact in Western Pennsylvania</h1></div>
-            </div>
-
-            <div class="row mx-0 py-5 px-lg-5 text-blue text-center">
-                <div class="col-md-4">
-                    <h1 class="h1 font-weight-bold">13</h1>
-                    <h1 class="h4">institutions</h1>
-
-                    <h1 class="h1 font-weight-bold mt-5">130+</h1>
-                    <h1 class="h4">mentors</h1>
-                </div>
-                <div class="col-md-4 col-sm-6 mx-auto">
-                    <img src="images/map.png" class="img-fluid" style="max-height:25rem;"/>
-                </div>
-                <div class="col-md-4">
-                    <h1 class="h1 font-weight-bold">900+</h1>
-                    <h1 class="h4">students</h1>
-
-                    <h1 class="h1 font-weight-bold mt-5">7</h1>
-                    <h1 class="h4">ed-tech tool <br/>partners</h1>
+        <div style="background: #f1f4fa;">
+            <div class="container">
+                <div class="row py-5">
+                    <div class="col text-center">
+                        <h1 class="font-weight-bold">Join the team today to help students.</h1>
+                            <a href="404.html" class="btn btn-outline-primary pl2-primary mt-3">
+                                Get Involved
+                            </a>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <div class="row py-4 px-lg-5 px-md-2 ed-tech-images">
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.cue.pitt.edu/" target="_blank" class="mx-auto">
-                    <img src="images/partner_logos/pps.png" class="img-fluid mb-3 mb-md-0" />
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.aleks.com/" target="_blank" class="mx-auto">
-                    <img src="images/edtechs/aleks.png" class="img-fluid mb-3 mb-md-0" />
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.bgcwpa.org/" target="_blank" class="mx-auto">
-                    <img src="images/partner_logos/bgc.png" class="img-fluid mb-3 mb-md-0" />
-                </a>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <a href="https://www.carnegielearning.com/solutions/math/mathia/" target="_blank" class="mx-auto">
-                    <img src="images/edtechs/carnegie_learning.png" class="img-fluid mb-3 mb-md-0" />
-                </a>
+        <div style="background: white;">
+            <div class="container py-5">
+                <div class="row">
+                    <h2 class="">Enabling XYZ for both mentors and learners.</h2>
+                </div>
+
+                <div class="row">
+                    mentor and learner demos here
+                </div>
+                
             </div>
         </div>
-        <div class="row pb-4 pr-5">
-            <div class="col text-right">
-                <a href="partners.html" class="text-blue">View All <img src="images/Arrow 1.svg" style="width:3rem;"/></a>
+
+        <div style="background: #f1f4fa;">
+            <div class="container  py-5">
+                <div class="row">
+                        <h1 class="font-weight-bold">Bringing the community together</h1>
+                </div>
+
+                <div class="row mt-3">
+                    <h2>Testimonies</h2>
+                </div>
+
+                <div class="row mt-3">
+                    <div class=col-6>
+                        Quote Carousel
+                    </div>
+                </div>
+
+                <h2 class="mt-3">Impact</h2>
+                <div class="row x-0 py-5 px-lg-5 text-blue text-center">
+                        
+                        <div class="col-md-4">
+                            <h1 class="h1 font-weight-bold">13</h1>
+                            <h1 class="h4">institutions</h1>
+        
+                            <h1 class="h1 font-weight-bold mt-5">130+</h1>
+                            <h1 class="h4">mentors</h1>
+                        </div>
+                        <div class="col-md-4 col-sm-6 mx-auto">
+                            <img src="images/map.png" class="img-fluid" style="max-height:25rem;"/>
+                        </div>
+                        <div class="col-md-4">
+                            <h1 class="h1 font-weight-bold">900+</h1>
+                            <h1 class="h4">students</h1>
+        
+                            <h1 class="h1 font-weight-bold mt-5">7</h1>
+                            <h1 class="h4">ed-tech tool <br/>partners</h1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div style="background: white;">
+            <div class="container">
+                <h2 class="py-5">Partnering Institutions</h2>
+                <div class="row">
+                    <div class="row py-4 px-lg-5 px-md-2 ed-tech-images justify-content-around">
+                        <div class="col-md-2 col-sm-6">
+                            <a href="https://www.cue.pitt.edu/" target="_blank" class="mx-auto">
+                                <img src="images/partner_logos/cue.png" class="img-fluid mb-3 mb-md-0" />
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="https://www.bgcwpa.org/" target="_blank" class="mx-auto">
+                                <img src="images/partner_logos/bgc.png" class="img-fluid mb-3 mb-md-0" />
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="https://hcvpgh.org/" target="_blank" class="mx-auto">
+                                <img src="images/partner_logos/homewood-childrens-village.png" class="img-fluid mb-3 mb-md-0" />
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="https://www.efsd.net/" target="_blank" class="mx-auto">
+                                <img src="images/partner_logos/ef.png" class="img-fluid mb-3 mb-md-0" />
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6">
+                            <a href="https://www.sasd.k12.pa.us/" target="_blank" class="mx-auto">
+                                <img src="images/partner_logos/shaler.png" class="img-fluid mb-3 mb-md-0" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="row justify-content-end pb-4 pr-5">
+                    <div>
+                        <a href="partners.html" class="text-blue">View More <img src="images/Arrow 1.svg" style="width:3rem;"/></a>
+                    </div>
+                </div>
             </div>
         </div>
+
+
+        <div id="newsletter" style="background: #f1f4fa;">
+            <div class="container py-5">
+                <div class="row">
+                    <h2>Newsletter</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+
+                            <p class="mt-3">
+                                Sign up to receive monthly information on PL&sup2; including new partners, app improvements, and research updates.
+                            </p>
+                    </div>
+                    <div class="col-6 text-right align-self-center">
+                        Email signup coming soon
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
         <div class="modal" tabindex="-1" role="dialog" id="covid-modal">
             <div class="modal-dialog modal-dialog-centered" role="document">
@@ -315,33 +340,26 @@
             </div>
         </div>
 
-        <div class="footer row px-2 px-lg-5">
-            <div id="footer-email" class="col-md-3">
-                <div class="mb-3">
-                    <a target="_blank" href="mailto:shivangg@andrew.cmu.edu; help@personalizedlearning2.org" class="regular inline footer-link">Contact Us</a>
-                </div>
-                <div class="mb-3">
-                    <a href="faq.html" class="footer-item regular footer-link">FAQs</a>
-                </div>
-                <div class="mb-3">
-                    <a target="_blank" href="https://www.cmu.edu/legal/" class="footer-item regular footer-link">Terms of Use</a>
-                </div>
-            </div>
-            <div class="col-md-6 footer-item mt-2 mt-md-0">
-                <div>Collaboration between</div>
-                <div class="footer-collaborator-images my-3">
+    
+    </div> <!-- End Container -->
+
+    <div class="footer-new m-0">
+        <div class="container-fluid">
+            <div class="row p-3">
+            <div class="col-md-6">
+                <div class="row justify-content-center justify-content-md-start">Collaboration between</div>
+                <div class="row justify-content-center justify-content-md-start footer-collaborator-images my-3">
                     <a href="https://learnlab.org/" target="_blank"><img src="images/learnlab-logo-white.png" /></a>
                     <a href="https://cmu.edu/" target="_blank"><img src="images/cmu-logo.png" /></a>
                     <a href="https://remakelearning.org/" target="_blank"><img src="images/remake-logo.png" /></a>
                     <a href="https://www.cue.pitt.edu/" target="_blank"><img src="images/pitt-logo.png" /></a>
                 </div>
-                <div>Carnegie Mellon University &copy; 2021</div>
+                
             </div>
-
-            <div class="col-md-3 footer-item mt-2 mt-md-0">
-                <div class="footer-item mt-2 mt-md-0">
-                    <div>Supported by</div>
-                    <div>
+    
+            <div class="col-md-6">
+                    <div class="row justify-content-center justify-content-md-end">Supported by</div>
+                    <div class="row justify-content-center justify-content-md-end mt-3">
                         <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/">
                             <img id="czi-logo" src="images/czi-logo.svg" />
                         </a>
@@ -349,9 +367,30 @@
                             <img id="rkmf-logo" src="images/RKMellonLogo.PNG" />
                         </a>
                     </div>
+            </div>
+    
+    
+            </div>
+    
+    
+            <div id="footer-email" class="row p-4 border-top">
+                <div class="col-6 col-sm-4">
+                    <div class="row">
+                        <div class="mr-3">
+                            <a href="media.html" class="footer-item regular footer-link">In The News</a>
+                        </div>
+                        <div class="mr-3 mt-2 mt-sm-0">
+                            <a target="_blank" href="mailto:shivangg@andrew.cmu.edu; help@personalizedlearning2.org" class="regular inline footer-link">Contact Us</a>
+                        </div>
+                        <div class="mr-3 mt-2 mt-sm-0">
+                            <a target="_blank" href="https://www.cmu.edu/legal/" class="footer-item regular footer-link">Terms of Use</a>
+                        </div>
+                    </div>
                 </div>
+                <div class="col px-2 align-self-center text-right text-lg-center">Carnegie Mellon <br class="d-sm-none">University &copy; 2021</div>
+                <div class="col-4 d-none d-lg-block"></div>
             </div>
         </div>
-    </div> <!-- End Container -->
+    </div>
 </body>
 </html>
