@@ -150,12 +150,13 @@
 .team img {
   max-width: 100%;
   max-height: 10em;
+  min-height: 141.5px;
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
 .team-affiliation {
   font-size: 0.9rem;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 
 .in-media img {
@@ -170,6 +171,8 @@
   text-decoration: uppercase;
   color: #3466bb;
 }
+
+/* old version of accordion arrows
 
 .accordion .fa-angle-down,
 .accordion .fa-angle-up {
@@ -186,8 +189,32 @@
 }
 .accordion .collapsed .fa-angle-down {
   display: inline-block;
+} */
+
+.accordion .fa-caret-down,
+.accordion .fa-caret-right {
+  float: right;
+  color: gray;
+}
+.accordion .fa-caret-down {
+  display: none;
+}
+.accordion .fa-caret-right {
+  display: inline-block;
+}
+.accordion .collapsed .fa-caret-right {
+  display: none;
+}
+.accordion .collapsed .fa-caret-down {
+  display: inline-block;
 }
 
 .section-list p {
   font-weight: 600;
+}
+
+.campaign {
+  /* This is for the embedded newsletter links */
+  padding-top: 1rem;
+  font-size: 1.5rem;
 }
