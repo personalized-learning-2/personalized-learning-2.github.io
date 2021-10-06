@@ -31,3 +31,18 @@ function initialize() {
         });
     } catch(err) {}
 }
+
+function pageNavSetup() {
+  // this is for testing; gets used to dynamically load header and footer
+
+  $(document).ready(function() {
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+  });
+
+  $(window).on("load", function() {
+    selectedPage = $("#page-title").text().toLowerCase();
+    $("#"+selectedPage+"-nav").addClass('active');
+    $(this).scrollTop(0);
+  });
+}
