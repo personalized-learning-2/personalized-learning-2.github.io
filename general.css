@@ -130,10 +130,6 @@ body {
   height: 1.6rem; /** Not sure why, but the LL logo appears larger than others */
 }
 
-.prez-card {
-  background: white;
-}
-
 #cue-logo {
   max-height: 170px;
 }
