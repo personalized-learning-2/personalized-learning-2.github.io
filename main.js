@@ -33,6 +33,7 @@ function initialize() {
 }
 
 function pageNavSetup() {
+  // this is for testing; gets used to dynamically load header and footer
 
   $(document).ready(function() {
     $("#header").load("header.html");
