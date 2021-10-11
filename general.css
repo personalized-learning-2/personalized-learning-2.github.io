@@ -170,14 +170,30 @@ h3 {
 }
 
 
-@media screen and (max-width: 576px) {
-  h5 p {
-    font-size: 1rem;
-  }
+.debold {
+        font-weight: 500;
+}
 
+
+@media screen and (max-width: 576px) {
   .faq-title {
     font-size: 1.25rem;
   }
 
 }
 
+@media screen and (max-width: 768px) {
+        .debold {
+          font-weight: 400;
+        }
+
+        .publication {
+                font-size: 1.1rem;
+              }
+      
+        .faq-title {
+          font-size: 1.25rem;
+        }
+      
+      }
+      
