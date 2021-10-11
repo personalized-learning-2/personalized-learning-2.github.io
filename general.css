@@ -165,6 +165,11 @@ h3 {
   font-weight: 300;
 }
 
+.dropdown-menu {
+        min-width: 100px;
+}
+
+
 @media screen and (max-width: 576px) {
   h5 p {
     font-size: 1rem;
@@ -173,4 +178,6 @@ h3 {
   .faq-title {
     font-size: 1.25rem;
   }
+
 }
+
