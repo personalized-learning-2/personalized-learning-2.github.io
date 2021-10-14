@@ -166,34 +166,37 @@ h3 {
 }
 
 .dropdown-menu {
-        min-width: 50px;
+  min-width: 50px;
 }
 
+.dropdown-item:hover {
+  color: #000 !important;
+}
+
+.dropdown-item:active {
+  background-color: transparent !important;
+}
 
 .debold {
-        font-weight: 500;
+  font-weight: 500;
 }
-
 
 @media screen and (max-width: 576px) {
   .faq-title {
     font-size: 1.25rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
-        .debold {
-          font-weight: 400;
-        }
+  .debold {
+    font-weight: 400;
+  }
 
-        .publication {
-                font-size: 1.1rem;
-              }
-      
-        .faq-title {
-          font-size: 1.25rem;
-        }
-      
-      }
-      
+  .publication {
+    font-size: 1.1rem;
+  }
+
+  .faq-title {
+    font-size: 1.25rem;
+  }
+}
