@@ -235,3 +235,14 @@ canvas {
 .tab-content.demos > .active {
   display: flex;
 }
+
+.panel-nav {
+  font-size: 1.25rem !important;
+  background: none !important;
+  color: #898989 !important;
+  font-weight: 500 !important;
+}
+
+.panel-nav.active {
+  color: #000 !important;
+}
