@@ -228,3 +228,10 @@ canvas {
   background: #f1f4fa;
   /* height: 180px; */
 }
+
+/* This is necessary to override normal bootstrap behavior, and
+   allow nav-pills embedded within tabs on the frontpage to flex
+   appropriately (under "enabling improvement for learners, etc" - section with gifs)*/
+.tab-content.demos > .active {
+  display: flex;
+}
