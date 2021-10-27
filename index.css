@@ -97,11 +97,6 @@ canvas {
   align-items: center;
 }
 
-.sub-header {
-  font-size: 1.3rem;
-  font-weight: 600;
-}
-
 #collab-title {
   text-align: center;
   padding-bottom: 80px;
@@ -157,7 +152,6 @@ canvas {
 
 .nav-item {
   text-align: center;
-  font-size: 0.8rem;
 }
 
 .nav-item a {

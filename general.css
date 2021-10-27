@@ -1,5 +1,5 @@
 body {
-  font-family: "SF Display Pro", "Roboto", "Montserrat", sans-serif;
+  font-family: "Nunito", "Roboto", sans-serif;
   color: #000;
 }
 
@@ -153,16 +153,22 @@ body {
   color: #3466bb;
 }
 
-h1 {
+h1,
+.h1 {
+  font-weight: 600;
+  font-size: 2.75rem;
+}
+
+h2,
+.h2 {
   font-weight: 500;
+  font-size: 1.87rem;
 }
 
-h2 {
-  font-weight: 400;
-}
-
-h3 {
-  font-weight: 300;
+h3,
+.h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .dropdown-menu {
