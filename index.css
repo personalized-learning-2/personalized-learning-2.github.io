@@ -252,4 +252,5 @@ canvas {
 
 .panel-nav.active {
   color: #000 !important;
+  font-weight: bold !important;
 }
