@@ -54,7 +54,7 @@ body {
   color: #000;
 }
 .nav-item.active {
-  font-weight: 700;
+  font-weight: 700 !important;
 }
 
 .inline {
@@ -205,4 +205,14 @@ h3,
   .faq-title {
     font-size: 1.25rem;
   }
+}
+
+#about-nav,
+#research-nav,
+#impact-nav,
+#faq-nav {
+  /* adjustments to fix contrast fail */
+  /* font-weight: 700;
+  color: gray !important;
+  font-size: 1.125rem; */
 }
