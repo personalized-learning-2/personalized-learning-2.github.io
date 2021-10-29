@@ -219,3 +219,16 @@
 ul.match-indent {
   padding-inline-start: 1.2rem;
 }
+
+.card-title {
+  font-size: 1.25rem;
+}
+
+.card.partner {
+  border: none;
+  background: #f1f4fa;
+}
+
+.publication {
+  font-size: 1.25rem;
+}

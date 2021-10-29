@@ -96,28 +96,27 @@ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display
         </button>
     
         <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-lg-auto">
-                <li id="about-nav" class="nav-item dropdown mr-lg-4">
+            <div class="navbar-nav ml-lg-auto">
+                <div id="about-nav" class="nav-item dropdown mr-lg-4">
                         <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                                 <div class="dropdown-menu px-3">
                                         <a class="dropdown-item nav-item px-0 text-lg-left" href="about-us.html">Team</a>
                                         <a class="dropdown-item nav-item px-0 text-lg-left" href="partners.html">Partners</a>
                                 </div> 
-                </li>
-
-                <li id="research-nav"class="nav-item mr-lg-4">
+                </div>
+                <div id="research-nav"class="nav-item mr-lg-4">
                     <a class="nav-link" href="research.html">Research</a>
-                </li>
-                <li id="impact-nav" class="nav-item mr-lg-4">
+                </div>
+                <div id="impact-nav" class="nav-item mr-lg-4">
                     <a class="nav-link" href="impact.html">Impact</a>
-                </li>
-                <li id="faq-nav" class="nav-item mr-lg-4">
+                </div>
+                <div id="faq-nav" class="nav-item mr-lg-4">
                     <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
+                </div>
                 <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
                     Log In
                 </button>
-            </ul>
+            </div>
         </div>
     </nav>
 
@@ -224,20 +223,15 @@ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display
         <div style="background: white;">
             <div class="container py-5 ">
 
-
                 <div class="row px-3 px-md-0 pb-5">
                     <h2 class="">Enabling improvement for both mentors and learners.</h2>
                 </div>
 
                 <div class="row">
-                    <ul class="nav nav-pills nav-justified col-md-10 pr-0" id="myTab" role="tablist">
-                        <li class="nav-item">
+                    <div class="nav nav-pills nav-justified col-md-10 pr-0" id="myTab" role="tablist">
                           <a class="nav-link panel-nav text-md-left px-0 active" id="mentors-tab" data-toggle="tab" href="#mentors" role="tab" aria-controls="mentors" aria-selected="true">Mentors</a>
-                        </li>
-                        <li class="nav-item">
                           <a class="nav-link panel-nav text-md-left px-0" id="learners-tab" data-toggle="tab" href="#learners" role="tab" aria-controls="learners" aria-selected="false">Learners</a>
-                        </li>
-                      </ul>
+                      </div>
 
                 </div>
 
@@ -295,8 +289,8 @@ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display
                               </div>
 
                               <div class="col-md-2 align-self-center">
-                                <div class="nav flex-column nav-pills" id="mentors-tab" role="tablist" aria-orientation="vertical">
-                                    <a class="nav-link panel-nav active" id="mentors-edtech-tab" data-toggle="pill" href="#mentors-edtech" role="tab" aria-controls="mentors-edtech" aria-selected="false">Edtech</a>
+                                <div class="nav flex-column nav-pills" id="mentors-tabnav" role="tablist" aria-orientation="vertical">
+                                    <a class="nav-link panel-nav active" id="mentors-edtech-tab" data-toggle="pill" href="#mentors-edtech" role="tab" aria-controls="mentors-edtech" aria-selected="true">Edtech</a>
                                     <a class="nav-link panel-nav" id="mentors-reflections-tab" data-toggle="pill" href="#mentors-reflections" role="tab" aria-controls="mentors-reflections" aria-selected="false">Reflections</a>
                                     <a class="nav-link panel-nav" id="mentors-resources-tab" data-toggle="pill" href="#mentors-resources" role="tab" aria-controls="mentors-resources" aria-selected="false">Resources</a>
                                     <a class="nav-link panel-nav" id="mentors-personalization-tab" data-toggle="pill" href="#mentors-personalization" role="tab" aria-controls="mentors-personalization" aria-selected="false">Personalization</a>
@@ -337,7 +331,7 @@ href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display
         
 
                             <div class="col-md-2 align-self-center">
-                                <div class="nav flex-column nav-pills" id="learners-tab" role="tablist" aria-orientation="vertical">
+                                <div class="nav flex-column nav-pills" id="learners-tabnav" role="tablist" aria-orientation="vertical">
                                   <a class="nav-link panel-nav active" id="learners-login-tab" data-toggle="pill" href="#learners-login" role="tab" aria-controls="learners-login" aria-selected="true">Login</a>
                                   <a class="nav-link panel-nav" id="learners-resources-tab" data-toggle="pill" href="#learners-resources" role="tab" aria-controls="learners-resources" aria-selected="false">Resources</a>
                                   <a class="nav-link panel-nav" id="learners-messages-tab" data-toggle="pill" href="#learners-messages" role="tab" aria-controls="learners-messages" aria-selected="false">Messages</a>

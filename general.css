@@ -1,6 +1,7 @@
 body {
   font-family: "Nunito", "Roboto", sans-serif;
   color: #000;
+  font-size: 1.125rem;
 }
 
 #navigation {
@@ -40,7 +41,7 @@ body {
 }
 
 .btn {
-  font-size: 0.9rem;
+  /* font-size: 0.9rem; */
 }
 
 .margin-0 {
@@ -199,7 +200,7 @@ h3,
   }
 
   .publication {
-    font-size: 1.1rem;
+    font-size: 1.1rem !important;
   }
 
   .faq-title {
@@ -207,12 +208,28 @@ h3,
   }
 }
 
-#about-nav,
-#research-nav,
-#impact-nav,
-#faq-nav {
+/* Accessibility fixes below */
+
+#about-nav > a,
+#research-nav > a,
+#impact-nav > a,
+#faq-nav > a {
   /* adjustments to fix contrast fail */
-  /* font-weight: 700;
-  color: gray !important;
-  font-size: 1.125rem; */
+  color: rgb(97, 97, 97);
+}
+
+#about-nav > a:hover,
+#research-nav > a:hover,
+#impact-nav > a:hover,
+#faq-nav > a:hover {
+  /* adjustments to fix contrast fail */
+  color: rgb(0, 0, 0);
+}
+
+.active > a.nav-link {
+  color: #000 !important;
+}
+
+a {
+  color: #3466bb;
 }
