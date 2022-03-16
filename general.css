@@ -233,3 +233,13 @@ h3,
 a {
   color: #3466bb;
 }
+
+.fine-print {
+  color: lightgray;
+  font-size: 0.8rem;
+}
+
+.blue-background {
+  color: white;
+  background-color: #3466dd;
+}
