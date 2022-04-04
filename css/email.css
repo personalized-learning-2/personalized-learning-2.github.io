@@ -1,0 +1,73 @@
+body {
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+.ml-10 {
+    margin-left: 10%;
+}
+
+.ctr {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ta-ctr {
+    text-align: center;
+}
+
+.benefits {
+    background: #D3E6FF;
+    width: 50%;
+}
+
+.benefits p {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+.email-btn button {
+    color: #fff;
+    background-color: #3466bb;
+    border-color: #3466bb;
+    border: 1px solid transparent;
+    border-radius: 0.35rem;
+    padding: 0.5rem !important;
+    font-size: 1rem;
+}
+
+.banner {
+    background: #3466BB;
+    padding: 14px;
+}
+
+#contact-us {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.lt-background {
+    background: #D3E6FF;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.email-btn {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
