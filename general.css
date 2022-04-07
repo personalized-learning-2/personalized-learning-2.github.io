@@ -176,9 +176,9 @@ h3,
 }
 
 .dropdown-menu {
-    min-width: 50px;
-    left: auto !important;
-    top: auto !important;
+  min-width: 50px;
+  left: auto !important;
+  top: auto !important;
 }
 
 .dropdown-item:hover {
@@ -251,4 +251,20 @@ a {
 
 .light-blue-background {
   background-color: #f1f4fa;
+}
+
+.s-red {
+  color: #bc4232;
+}
+
+.m-yellow {
+  color: #fcc33d;
+}
+
+.a-green {
+  color: #0f7453;
+}
+
+.t-purple {
+  color: #9a46ab;
 }
