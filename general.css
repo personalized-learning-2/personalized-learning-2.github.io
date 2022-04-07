@@ -158,18 +158,21 @@ h1,
 .h1 {
   font-weight: 600;
   font-size: 2.75rem;
+  font-family: Mulish, sans-serif;
 }
 
 h2,
 .h2 {
   font-weight: 500;
   font-size: 1.87rem;
+  font-family: Mulish, sans-serif;
 }
 
 h3,
 .h3 {
   font-weight: 500;
   font-size: 1.5rem;
+  font-family: Mulish, sans-serif;
 }
 
 .dropdown-menu {
@@ -242,4 +245,8 @@ a {
 .blue-background {
   color: white;
   background-color: #3466dd;
+}
+
+.light-blue-background {
+  background-color: #f1f4fa;
 }
