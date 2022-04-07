@@ -176,7 +176,9 @@ h3,
 }
 
 .dropdown-menu {
-  min-width: 50px;
+    min-width: 50px;
+    left: auto !important;
+    top: auto !important;
 }
 
 .dropdown-item:hover {
