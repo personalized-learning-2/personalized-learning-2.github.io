@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html  lang="en">
+<head>
+    <!-- <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>$("head").load("head.html");</script> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Personalized Learning&sup2;</title>
+<!--jQuery must also be linked for Bootstrap to function-->
+<script src="main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!--fonts-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+<!-- <link
+  href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap"
+  rel="stylesheet"
+/> -->
+
+<!-- This website uses Bootstrap JS and CSS through links to MaxCDN's CDN supported version-->
+<!-- <link
+  rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+  crossorigin="anonymous"
+/>
+<script
+  src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+  integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+  crossorigin="anonymous"
+></script> -->
+
+<!-- Testing updated version of bootstrap 4 for drop shadows -->
+<link
+ rel="stylesheet"
+ href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+ integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+ <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+  crossorigin="anonymous"></script>
+
+<!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> -->
+
+<!-- for mailchimp -->
+<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+<!-- for fontawesome (icons, esp on faq) -->
+<link href="css/font-awesome.min.css" rel="stylesheet" />
+
+<!--custom css-->
+<link href="index.css" rel="stylesheet" />
+<link href="general.css" rel="stylesheet" />
+<link href="other-pages.css" rel="stylesheet" />
+
+<!--custom js-->
+<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
+
+
+<!-- <link rel="icon" href="favicon.ico" /> -->
+<!-- Favicon Code -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="manifest" href="/site.webmanifest" />
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+<meta name="msapplication-TileColor" content="#da532c" />
+<meta name="theme-color" content="#ffffff" />
+</head>
+
+<body onload="initialize();">
+    <!-- <div id="header"></div> -->
+    <div class="p-4 blue-background h2 text-center">
+        <a href="volunteer.html" class="" style="color:white">
+            <span style="color:#FFCDCD">Get Involved!</span> Learn more about tutoring opportunities.
+        </a>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5 border-bottom">
+        <a class="navbar-brand" href="index.html">
+            <img
+              height="36"
+              width="240"
+              class="pl2-logo"
+              style="margin-bottom: 10px"
+              alt="PL2"
+              src="images/pl2-logo.svg"
+            />
+        </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
+            <div class="navbar-nav ml-lg-auto">
+                <div id="about-nav" class="nav-item dropdown mr-lg-4">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
+                                <div class="dropdown-menu px-3">
+                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="about-us.html">Our Story</a>
+                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="team.html">Our Team</a>
+                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="partners.html">Partners</a>
+                                </div> 
+                </div>
+                <!-- <div id="partners-nav"class="nav-item mr-lg-4">
+                    <a class="nav-link" href="partners.html">Partners</a>
+                </div> -->
+                <div id="impact-nav"class="nav-item mr-lg-4">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
+                                <div class="dropdown-menu px-3">
+                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="impact.html">Results</a>
+                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="research.html">Research</a>
+                                </div> 
+                </div>
+                <div id="solutions-nav" class="nav-item mr-lg-4">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Our Solutions</a>
+                    <div class="dropdown-menu px-3">
+                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2training.html">PL&sup2; Training</a>
+                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2toolkit.html">PL&sup2; Toolkit</a>
+                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2tutoring.html">PL&sup2; Tutoring</a>
+                    </div>
+                </div>
+                <div id="join-nav" class="nav-item active mr-lg-4">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Join Us</a>
+                    <div class="dropdown-menu px-3">
+                            <!-- <a class="dropdown-item nav-item px-0 text-lg-left" href="careers.html">Careers</a> -->
+                            <a class="dropdown-item nav-item px-0 text-lg-left" href="volunteer.html">Volunteer</a>
+                            <a class="dropdown-item nav-item px-0 text-lg-left" href="faq.html">FAQs</a>
+                    </div>
+                </div>
+                <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
+                    Log In
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="container px-sm-3">
+
+            <div class="row my-5">
+                <div class="col">
+                    <div id="page-title" class="d-none">faq</div> <!-- for header highlight -->
+                    <h1 class="my-2 my-sm-4 text-center">PL&sup2; v4.0.0 Release Notes</h1>
+                </div>
+            </div>
+            <div class="row px-md-5">
+                <p>Spring has sprung, and with the change of seasons comes another big change in the Personalized Learning Squared ecosystem. You will see an all new side of the same PL&sup2; you know and love, including the introduction of the lessons feature and the reorganization of different PL2 services into their own individual solutions. </p>
+                <p>All training and professional development features will be classified under the PL2 Training solution. We have released the highly anticipated 'Lessons' feature, which will provide tutors and teachers with short (~15 mins), interactive e-learning experiences that they can do at their own pace. Mentor-facing resources can now be found under the 'Strategies' section of the app.</p>
+                <p>The PL2 data-driven student dashboard and personalized resource assistant will now be called the PL2 Toolkit solution line. </p>
+                <p>All strategies and resources in the app have been re-organized according to our new research-driven SMART competencies system. </p>
+                <p>These changes are now visible in the app and will provide an all new experience for tutors to be able to easily access the features they need. </p>
+                <p>Read on below for more details on the individual updates!</p>
+
+            </div>
+            <hr>
+            <div class="row my-5 px-md-5">
+                <div class="col-md-5 text-center text-md-right">
+                    <img alt="P L 2 sidebar" src="images/release_notes/v4/v4_sidebar.png" class="img-fluid" />
+                </div>
+                <div class="col-md-7">
+                    <div>
+                        <p>The navbar has been reorganized to distinguish between our two main in-app solutions for tutors: </p>
+                        <b>PL&sup2; Training</b> contains resources that help mentors develop their mentoring skills so that they can help students most effectively.
+                        <ul class="py-3">
+                            <li>
+                                <b><a href="#lessons-v4-update">Lessons</a></b> are brand-new, guided learning modules developed by PL&sup2;'s learning scientists to help tutors develop the most critical skills to help their students.
+                            </li>
+                            <li class="pt-2">
+                                <b>Strategies</b> are resources and tools curated by our team to provide support for mentors on a wide variety of topics and issues - newly organized according to our <a href="#smart-v4-update">SMART framework</a>!
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <b>PL&sup2; Toolkit</b> is the one-stop shop for data and resources to enable tutors to personalize the learning experience of their students.
+                        <ul class="py-3">
+                            <li>
+                                <b>Your Students</b> gives a quick snapshot of your learners' progress at the moment, with data from their ed-tech software and tools for reflections and goal setting.
+                            </li>
+                            <li class="pt-2">
+                                <b>Data Trends</b> gives a high-level perspective on how all of your students have performed in recent weeks, with opportunities to identify and drill down on anomalies.
+                            </li>
+                            <li class="pt-2">
+                                <b>Learning Resources</b> is a treasure trove of content to help students with specific challenges identified by their mentors, or by PL&sup2;'s Resource Assistant! Now organized according to our <a href="#headingOne">SMART framework</a>!
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+            <div class="row my-5 px-md-5">
+                <h2>v4.0.0 Update List</h2>
+            </div>
+
+            <div class="accordion px-md-5" id="accordionExample">
+
+                <div class="mb-4 h3 faq-title" id="headingOne"  data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    SMART Framework<i class="fa fa-caret-down"></i> <i class="fa fa-caret-right"></i>
+                </div>
+                <div id="collapseOne" class="collapse show mb-4" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    Mentor Strategies and Student Learning Resources have been recategorized according to PL&sup2;'s <a href="pl2training.html" target="_blank">evidence-based training curriculum</a>, with 13 different competencies grouped by 5 strategic areas:
+                    <ul>
+                        <li>Social-Emotional Learning</li>
+                        <li>Mastering Content</li>
+                        <li>Advocacy</li>
+                        <li>Relationships</li>
+                        <li>Technology Tools</li>
+                    </ul>
+                    <div class="text-center px-md-5">
+                        <img src="images/release_notes/v4/v4_pl2resources.png" class="img-fluid"/>
+                    </div>
+                    <p class="py-3">For more information, please see our <a href="https://doi.org/10.1145/3491140.3528262&sa=D&source=docs&ust=1650394939519985&usg=AOvVaw2ZnBvyiDQ-Om43RmF8g915" target="_blank">research</a>!</p>
+                </div>
+                <hr>
+                <div class="mb-4 h3 faq-title collapsed" id="headingTwo"  data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    PL&sup2; Lessons<i class="fa fa-caret-down"></i> <i class="fa fa-caret-right"></i>
+                </div>
+                <div id="collapseTwo" class="collapse mb-4" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <p>
+                        A new addition to PL&sup2; Training - modules to help tutors with the most challenging and important skills, designed to be completed in under 15 minutes.  We currently have two modules (Reacting to Errors and Supporting a Growth Mindset), with new modules being released every month.
+                    </p>
+                    <p class="text-center px-md-5">
+                        <img src="images/release_notes/v4/v4_pl2lessons.png" class="img-fluid"/>
+                    </p>
+                </div>
+                <hr>
+
+                <div class="mb-4 h3 faq-title collapsed" id="headingThree"  data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Minor Updates & Bug Fixes<i class="fa fa-caret-down"></i> <i class="fa fa-caret-right"></i>
+                </div>
+                <div id="collapseThree" class="collapse mb-4" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <ul>
+                        <li>
+                            Graphs on the Student Progress page have been updated to more clearly indicate the student's effort and progress toward meeting their math ed-tech goals.
+                            <p class="text-center px-md-5 py-3"><img src="images/release_notes/v4/v4_studentprog.png" class="img-fluid"/></p>
+                        </li>
+                        <li>Homepage design has been modified to improve resource visibility.</li>
+                        <li>New users will now receive a welcome email from the system.</li>
+                        <li>Admin and Student tabs now formatted for mobile systems.</li>
+                    </ul>
+                </div>
+                <hr>
+
+                <div class="mb-4 h3 faq-title collapsed" id="headingFour"  data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Known Issues<i class="fa fa-caret-down"></i> <i class="fa fa-caret-right"></i>
+                </div>
+                <div id="collapseFour" class="collapse mb-4" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <ul>
+                        <li>On mobile Safari browsers, some graphs/visuals may become distorted.</li>
+                        <li>Lessons may have some minor formatting issues when completed on mobile devices in the portrait orientation, such as mis-alignment of question tags.</li>
+                    </ul>                
+                </div>
+                <hr>
+
+            </div>
+            
+
+        </div>
+
+
+<!--
+        <div class="row mt-5 mb-3">
+            <div class="col">
+                <h1 class="h2 text-center">PL&sup2; Instructional Videos</h1>
+            </div>
+        </div>
+-->
+
+
+        </div>
+
+
+    </div> <!-- End Container -->
+
+    <!-- <div id="footer"></div>  footer for dev purposes -->
+    <div class="footer-new">
+        <div class="container-fluid">
+            <div class="row p-3">
+            <div class="col-md-4">
+                <div class="row justify-content-center justify-content-md-start">Collaboration between</div>
+                <div class="row justify-content-center justify-content-md-start footer-collaborator-images my-3">
+                    <a href="https://learnlab.org/" target="_blank"><img alt="Learn Lab Logo" src="images/learnlab-logo-white.png" /></a>
+                    <br d-none d-md-inline d-lg-none>
+                    <a href="https://cmu.edu/" target="_blank"><img alt="Carnegie Mellon University Logo" src="images/cmu-logo.png" /></a>
+                    <a href="https://remakelearning.org/" target="_blank"><img alt="Remake Learning Logo" src="images/remake-logo.png" /></a>
+                    <a href="https://www.cue.pitt.edu/" target="_blank"><img alt="University of Pittsburgh Logo" src="images/pitt-logo.png" /></a>
+                </div>
+                
+            </div>
+    
+            <div class="col-md-4">
+                    <div class="row justify-content-center">Supported by</div>
+                    <div class="row justify-content-center mt-3">
+                        <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/">
+                            <img alt="Chan Zuckerberg Initiative Logo" id="czi-logo" src="images/czi-logo.svg" />
+                        </a>
+                        <a target="_blank" href="https://www.rkmf.org/">
+                            <img alt="Robert K Mellon Foundation Logo" id="rkmf-logo" src="images/rkmf.svg" />
+                        </a>
+                    </div>
+            </div>
+    
+            <div class="col-md-4 mt-3 mt-md-0">
+                    <div class="row justify-content-center justify-content-md-end">Sign up to receive our newsletter</div>
+                    <div class="row justify-content-center justify-content-md-end">
+                        <div id="mc_embed_signup">
+                            <form style="background: #3466bb; text-align: right;" action="https://remakelearning.us16.list-manage.com/subscribe/post?u=c13118f7e92d11201e20cc098&amp;id=f02b7144bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
+                                class="validate" target="_blank" novalidate>
+                                <div class="form-row justify-content-end">
+                                    <input type="email" value="" name="EMAIL" class="email col-12 col-lg-8" id="mce-EMAIL" placeholder="email address" required>
+                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c13118f7e92d11201e20cc098_f02b7144bd" tabindex="-1" value=""></div>
+                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-secondary col-12 col-lg-8">
+                                </div>
+                            </form>
+                            </div>                       
+                    </div>
+            </div>
+    
+            </div>
+    
+    
+            <div id="footer-email" class="row p-4 border-top">
+              <div class="col-6 col-md-3">
+                <div class="row">
+                    <div class="col-md p-0">
+                        <a href="media.html" class="footer-item regular footer-link">In The News</a>
+                    </div>
+                    <div class="col-md p-0 mt-2 mt-md-0">
+                      <a href="release-notes.html" class="footer-item regular footer-link">Release Notes</a>
+                  </div>
+  
+                </div>
+              </div>
+              <div class="col-6 col-md-3 order-md-last">
+                  <div class="row justify-content-end text-right">
+                    <div class="col-md p-0">
+                        <a target="_blank" href="https://www.cmu.edu/legal/" class="footer-item regular footer-link">Terms of Use</a>
+                    </div>
+                    <div class="col-md p-0 mt-2 mt-md-0">
+                        <a href="faq.html" class="footer-item regular footer-link">FAQs</a>
+                      </div>
+                    <div class="col-md p-0 mt-2 mt-md-0">
+                      <a target="_blank" href="mailto:shivangg@andrew.cmu.edu; help@personalizedlearning2.org" class="regular inline footer-link">Contact Us</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col align-self-center text-center mt-3 mt-md-0">Carnegie Mellon University &copy; 2022</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
