@@ -1,152 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <!-- <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>$("head").load("head.html");</script> -->
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <!--custom css-->
+    <link href="index.css" rel="stylesheet" />
+    <link href="general.css" rel="stylesheet" />
+    <link href="other-pages.css" rel="stylesheet" />
+    <script>
+        $(function(){ $("head").load("head.html", function() { pageNavSetup(); });  });
+    </script>
+  </head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Personalized Learning&sup2;</title>
-<!--jQuery must also be linked for Bootstrap to function-->
-<script src="main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!--fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
-    
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-
-<!-- Testing updated version of bootstrap 4 for drop shadows -->
-<link
- rel="stylesheet"
- href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
- integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
- <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-  crossorigin="anonymous"></script>
-
-<!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> -->
-
-<!-- for mailchimp -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-
-<!-- for fontawesome (icons, esp on faq) -->
-<link href="css/font-awesome.min.css" rel="stylesheet" />
-
-<!--custom css-->
-<link href="index.css" rel="stylesheet" />
-<link href="general.css" rel="stylesheet" />
-<link href="other-pages.css" rel="stylesheet" />
-
-<!--custom js-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
-
-
-<!-- <link rel="icon" href="favicon.ico" /> -->
-<!-- Favicon Code -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="theme-color" content="#ffffff" />
-
-</head>
-
-<body onload="initialize();">
-
-    <div class="p-4 blue-background h2 text-center">
-        <a href="volunteer.html" class="" style="color:white">
-            <span style="color:#FFCDCD">Get Involved!</span> Learn more about tutoring opportunities.
-        </a>
-    </div>
-    <!-- <div id="header"></div> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5 border-bottom">
-        <a class="navbar-brand" href="index.html">
-            <img
-              height="36"
-              width="240"
-              class="pl2-logo"
-              style="margin-bottom: 10px"
-              alt="PL2"
-              src="images/pl2-logo.svg"
-            />
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
-            <div class="navbar-nav ml-lg-auto">
-                <div id="about-nav" class="nav-item dropdown mr-lg-4">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                                <div class="dropdown-menu px-3">
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="about-us.html">Our Story</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="team.html">Our Team</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="partners.html">Partners</a>
-                                </div> 
-                </div>
-                <!-- <div id="partners-nav"class="nav-item mr-lg-4">
-                    <a class="nav-link" href="partners.html">Partners</a>
-                </div> -->
-                <div id="impact-nav"class="nav-item mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
-                                <div class="dropdown-menu px-3">
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="impact.html">Results</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="research.html">Research</a>
-                                </div> 
-                </div>
-                <div id="solutions-nav" class="nav-item active mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Our Solutions</a>
-                    <div class="dropdown-menu px-3">
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2training.html">PL&sup2; Training</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2toolkit.html">PL&sup2; Toolkit</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2tutoring.html">PL&sup2; Tutoring</a>
-                    </div>
-                </div>
-                <div id="join-nav" class="nav-item mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Join Us</a>
-                    <div class="dropdown-menu px-3">
-                            <!-- <a class="dropdown-item nav-item px-0 text-lg-left" href="careers.html">Careers</a> -->
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="volunteer.html">Volunteer</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="faq.html">FAQs</a>
-                    </div>
-                </div>
-                <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
-                    Log In
-                </button>
-            </div>
-        </div>
-    </nav>
+<body>
+<div id="content" style="display: none;">
+    <div id="page-title" style="display: none;">solutions</div>
+    <div id="banner"></div>
+    <div id="header"></div>
 
     <div class="container-fluid p-3 p-sm-0">
 
@@ -287,82 +157,7 @@
 
 
     </div> <!-- End Container -->
-    <!-- <div id="footer"></div>  footer for dev purposes -->
-    <div class="footer-new">
-        <div class="container-fluid">
-            <div class="row p-3">
-            <div class="col-md-4">
-                <div class="row justify-content-center justify-content-md-start">Collaboration between</div>
-                <div class="row justify-content-center justify-content-md-start footer-collaborator-images my-3">
-                    <a href="https://learnlab.org/" target="_blank"><img alt="Learn Lab Logo" src="images/learnlab-logo-white.png" /></a>
-                    <br d-none d-md-inline d-lg-none>
-                    <a href="https://cmu.edu/" target="_blank"><img alt="Carnegie Mellon University Logo" src="images/cmu-logo.png" /></a>
-                    <a href="https://remakelearning.org/" target="_blank"><img alt="Remake Learning Logo" src="images/remake-logo.png" /></a>
-                    <a href="https://www.cue.pitt.edu/" target="_blank"><img alt="University of Pittsburgh Logo" src="images/pitt-logo.png" /></a>
-                </div>
-                
-            </div>
-    
-            <div class="col-md-4">
-                    <div class="row justify-content-center">Supported by</div>
-                    <div class="row justify-content-center mt-3">
-                        <a target="_blank" href="https://chanzuckerberg.com/grants-ventures/grants/">
-                            <img alt="Chan Zuckerberg Initiative Logo" id="czi-logo" src="images/czi-logo.svg" />
-                        </a>
-                        <a target="_blank" href="https://www.rkmf.org/">
-                            <img alt="Robert K Mellon Foundation Logo" id="rkmf-logo" src="images/rkmf.svg" />
-                        </a>
-                    </div>
-            </div>
-    
-            <div class="col-md-4 mt-3 mt-md-0">
-                    <div class="row justify-content-center justify-content-md-end">Sign up to receive our newsletter</div>
-                    <div class="row justify-content-center justify-content-md-end">
-                        <div id="mc_embed_signup">
-                            <form style="background: #3466bb; text-align: right;" action="https://remakelearning.us16.list-manage.com/subscribe/post?u=c13118f7e92d11201e20cc098&amp;id=f02b7144bd" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" 
-                                class="validate" target="_blank" novalidate>
-                                <div class="form-row justify-content-end">
-                                    <input type="email" value="" name="EMAIL" class="email col-12 col-lg-8" id="mce-EMAIL" placeholder="email address" required>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c13118f7e92d11201e20cc098_f02b7144bd" tabindex="-1" value=""></div>
-                                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn-secondary col-12 col-lg-8">
-                                </div>
-                            </form>
-                            </div>                       
-                    </div>
-            </div>
-    
-            </div>
-    
-    
-            <div id="footer-email" class="row p-4 border-top">
-              <div class="col-6 col-md-3">
-                <div class="row">
-                    <div class="col-md p-0">
-                        <a href="media.html" class="footer-item regular footer-link">In The News</a>
-                    </div>
-                    <div class="col-md p-0 mt-2 mt-md-0">
-                      <a href="release-notes.html" class="footer-item regular footer-link">Release Notes</a>
-                    </div>
-  
-                </div>
-              </div>
-              <div class="col-6 col-md-3 order-md-last">
-                  <div class="row justify-content-end text-right">
-                    <div class="col-md p-0">
-                        <a target="_blank" href="https://www.cmu.edu/legal/" class="footer-item regular footer-link">Terms of Use</a>
-                    </div>
-                    <div class="col-md p-0 mt-2 mt-md-0">
-                        <a href="faq.html" class="footer-item regular footer-link">FAQs</a>
-                      </div>
-                    <div class="col-md p-0 mt-2 mt-md-0">
-                      <a target="_blank" href="mailto:shivangg@andrew.cmu.edu; help@personalizedlearning2.org" class="regular inline footer-link">Contact Us</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col align-self-center text-center mt-3 mt-md-0">Carnegie Mellon University &copy; 2022</div>
-            </div>
-        </div>
-    </div>
-</body>
+    <div id="footer"></div>
+</div>
+  </body>
 </html>
