@@ -64,7 +64,7 @@ function releaseNotesSetup() {
 
 
     $("#release-notes-body").load("release-notes_4.0.html");
-    console.log($("#release-notes_4.0"));
+    // console.log($("#release-notes_4.0"));
 
 }
 
