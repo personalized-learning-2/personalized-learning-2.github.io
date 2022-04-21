@@ -131,25 +131,25 @@ function contactUs() {
 
 // var $form = $('form#contact-us-form');
 
-function sendContactForm() {
+// function sendContactForm() {
   
-  user_data = {
-    "Name": document.getElementById("contact-form-name").value,
-    "Email": document.getElementById("contact-form-email").value,
-    "Institution": document.getElementById("contact-form-inst").value,
-    "MoreInfo": document.getElementById("contact-form-moreinfo").value,
-    "Services":"pl2 Toolkit, pl2 Tutoring"
-  }
+//   user_data = {
+//     "Name": document.getElementById("contact-form-name").value,
+//     "Email": document.getElementById("contact-form-email").value,
+//     "Institution": document.getElementById("contact-form-inst").value,
+//     "MoreInfo": document.getElementById("contact-form-moreinfo").value,
+//     "Services":"pl2 Toolkit, pl2 Tutoring"
+//   }
   
-  $.ajax({
-        url: "https://script.google.com/macros/s/AKfycby6e6dvopVzMSGZfMesDU_m1Msz8fHlv9A3yifb2v4H7tpADEQIm5JhvBbRZmQZQ-dn/exec",
-        method: "GET",
-        dataType: "json",
-        data: user_data
-      })
+//   $.ajax({
+//         url: "https://script.google.com/macros/s/AKfycby6e6dvopVzMSGZfMesDU_m1Msz8fHlv9A3yifb2v4H7tpADEQIm5JhvBbRZmQZQ-dn/exec",
+//         method: "GET",
+//         dataType: "json",
+//         data: user_data
+//       })
   
 
-}
+// }
 
 // $('#contact-us-form').on('click', function(e) {
 //   e.preventDefault();
