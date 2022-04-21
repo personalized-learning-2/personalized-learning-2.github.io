@@ -232,3 +232,9 @@ ul.match-indent {
 .publication {
   font-size: 1.25rem;
 }
+
+.release_nav:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 600;
+}
