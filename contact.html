@@ -1,173 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
-    <!-- <script src="main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>$("head").load("head.html");</script> -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-<title>Personalized Learning&sup2;</title>
-<!--jQuery must also be linked for Bootstrap to function-->
-<script src="main.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <!--fonts-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Nunito:300,400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
+    <head>
     
-    <link
-    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap"
-      rel="stylesheet"
-    />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+        <!--custom css-->
+        <link href="index.css" rel="stylesheet" />
+        <link href="general.css" rel="stylesheet" />
+        <link href="other-pages.css" rel="stylesheet" />
+        <script>
+            $(function(){ $("head").load("head.html", function() { pageNavSetup(); });  });
+        </script>
+      </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
-
-<!-- Testing updated version of bootstrap 4 for drop shadows -->
-<link
- rel="stylesheet"
- href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
- integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
- <script
-  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-  crossorigin="anonymous"></script>
-
-<!-- <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap" rel="stylesheet"> -->
-
-<!-- for mailchimp -->
-<link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
-    /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-      We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-    </style>
-
-<!-- for fontawesome (icons, esp on faq) -->
-<link href="css/font-awesome.min.css" rel="stylesheet" />
-
-<!--custom css-->
-<link href="index.css" rel="stylesheet" />
-<link href="general.css" rel="stylesheet" />
-<link href="other-pages.css" rel="stylesheet" />
-
-<!--custom js-->
-<!--    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script> -->
-
-
-<!-- <link rel="icon" href="favicon.ico" /> -->
-<!-- Favicon Code -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-<link rel="manifest" href="/site.webmanifest" />
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-<meta name="msapplication-TileColor" content="#da532c" />
-<meta name="theme-color" content="#ffffff" />
-
-</head>
-
-<body onload="initialize();">
-
-    <div class="p-4 blue-background h2 text-center">
-        <a href="volunteer.html" class="" style="color:white">
-            <span style="color:#FFCDCD">Get Involved!</span> Learn more about tutoring opportunities.
-        </a>
-    </div>
-    <!-- <div id="header"></div> -->
-
-    <nav class="navbar navbar-expand-lg navbar-light mx-lg-5 border-bottom">
-        <a class="navbar-brand" href="index.html">
-            <img
-              height="36"
-              width="240"
-              class="pl2-logo"
-              style="margin-bottom: 10px"
-              alt="PL2"
-              src="images/pl2-logo.svg"
-            />
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+      <body>
+        <div id="page-title" style="display: none;">about</div>
+        <div id="banner"></div>
+        <div id="header"></div>
+        <div class="container-fluid p-3 p-sm-0">
     
-        <div class="collapse navbar-collapse my-4" id="navbarSupportedContent">
-            <div class="navbar-nav ml-lg-auto">
-                <div id="about-nav" class="nav-item dropdown mr-lg-4">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
-                                <div class="dropdown-menu px-3">
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="about-us.html">Our Story</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="team.html">Our Team</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="partners.html">Partners</a>
-                                </div> 
+            <div class="container">
+    
+                <div class="row pt-lg-5 text-black">
+                    <h1 class="my-4">Contact Us</h1>
                 </div>
-                <!-- <div id="partners-nav"class="nav-item mr-lg-4">
-                    <a class="nav-link" href="partners.html">Partners</a>
-                </div> -->
-                <div id="impact-nav"class="nav-item mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Impact</a>
-                                <div class="dropdown-menu px-3">
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="impact.html">Results</a>
-                                        <a class="dropdown-item nav-item px-0 text-lg-left" href="research.html">Research</a>
-                                </div> 
-                </div>
-                <div id="solutions-nav" class="nav-item active mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Our Solutions</a>
-                    <div class="dropdown-menu px-3">
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2training.html">PL&sup2; Training</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2toolkit.html">PL&sup2; Toolkit</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="pl2tutors.html">PL&sup2; Tutors</a>
+    
+                <div class="row pb-lg-5 text-black">
+                    <div class="h3">
+                        For all inquiries, please fill out the form below.
                     </div>
                 </div>
-                <div id="join-nav" class="nav-item mr-lg-4">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Join Us</a>
-                    <div class="dropdown-menu px-3">
-                            <!-- <a class="dropdown-item nav-item px-0 text-lg-left" href="careers.html">Careers</a> -->
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="volunteer.html">Volunteer</a>
-                            <a class="dropdown-item nav-item px-0 text-lg-left" href="faq.html">FAQs</a>
-                    </div>
-                </div>
-                <button onclick="window.open('https://pl2.andrew.cmu.edu/PL2', '_blank'); return false;" class="btn btn-outline-primary pl2-primary" type="submit">
-                    Log In
-                </button>
-            </div>
+                
+                <div class="row pb-lg-5 mb-5 pt-3">
+                    <form action="mail_handler.php" method="post" class="needs-validation" name="contactUsForm" id="contact-us-form" novalidate>
+                        <div>
+                            <label for="name">Name</label><br> <input class="form-control light-blue-background" id="contact-form-name" name="name" size="32" type="text" required>
+                            <div class="invalid-feedback">Please provide a valid name</div><br>
+                        </div>
+                        
+                        <div>
+                            <label for="email">Email</label><br> <input class="form-control light-blue-background" id="contact-form-email" name="email" size="32" type="email" required>
+                            <div class="invalid-feedback">Please provide a valid email</div><br>
+                        </div>
+                        
+                        <div>
+                            <label for="institution">Institution</label><br> <input class="form-control light-blue-background" id="contact-form-inst" name="institution" size="32" type="text" required>
+                            <div class="invalid-feedback">Please provide a valid Institution</div><br>
+                        </div>
+                        
+                        <div>
+                            <label for="msg">Tell us more about your organization and how we may be able to help you.</label><textarea class="form-control light-blue-background" id="contact-form-moreinfo" cols="100" name="msg" rows="5" type="textarea" required></textarea>
+                            <div class="invalid-feedback ">Please provide a valid information</div><br>
+                        </div>
+                        
+                        <p>Please indicate which of the following you are interested in</p>
+                        <div class="form-group pl-3">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="contact-form-pl2training" name="pl2training"><label class="form-check-label" for="pl2training"> PL&sup2 Trainning - Personalized professional development for mentors and tutors</label><br></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="contact-form-pl2toolkit" name="pl2toolkit"><label class="form-check-label" for="pl2toolkit"> PL&sup2 Toolkit - Personalized interventions for students</label><br></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="contact-form-pl2tutors" name="pl2tutors"><label class="form-check-label" for="pl2tutors"> PL&sup2 Tutors - Trained tutors on top</label><br></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="contact-form-eventinfo" name="eventinfo"><label class="form-check-label" for="eventinfo"> Information on upcoming events and releases</label><br></div>
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="contact-form-career" name="career"><label class="form-check-label" for="career"> Career Opportunity</label><br></div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-outline-primary pl2-primary mt-3 pt-2 pb-2 pl-4 pr-4">Submit</button>
+                    </form>
+                    
+                </div> 
+            </div> <!-- End Container -->
+            <div id="footer"></div>
         </div>
-    </nav>
-
-    <div class="container-fluid p-3 p-sm-0">
-
-        <div class="container">
-
-            <p style="text-align: center; margin-bottom: 4rem;">Contact us to get started!</p>
-            
-            <div>
-              <form name="contactUsForm" id="contact-us-form">
-                <p>Name*&nbsp;<br> <input id="contact-form-name" name="Name" size="32" type="text"> </p>
-                <p>Email*<br> <input id="contact-form-email" name="Email" size="32" type="text"> </p>
-                <p>Institution<br> <input id="contact-form-inst" name="Institution" size="32" type="text"></p>                
-                <p>Tell us more about your organization and how we may be able to help you.<textarea id="contact-form-moreinfo" cols="100" name="MoreInfo" rows="5" type="textarea"></textarea></p>
-                <p><div onclick="sendContactForm()" class="btn btn-outline-primary pl2-primary">
-                    Send Info
-                </div></p>
-              </form>
-            </div>
--->            
-    </div> <!-- End Container -->
-    <div id="footer"></div>
-</div>
-  </body>
+        <script>
+            // Example starter JavaScript for disabling form submissions if there are invalid fields
+            (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                    }, false);
+                });
+                }, false);
+            })();
+        </script>
+    </body>
 </html>
