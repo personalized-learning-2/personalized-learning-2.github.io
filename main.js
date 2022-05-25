@@ -104,6 +104,7 @@ function releaseNav(item) {
 
 }
 
+
 function contactUs() {
     var form = $('#contact-us-form');
 
@@ -163,3 +164,4 @@ function contactUs() {
 //     function() {console.log("Successful post!");}
 //   );
 // })
+
