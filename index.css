@@ -17,6 +17,18 @@
   background-color: #3466dd;
 }
 
+
+.button-back {
+  color: white;
+  background-color: #3466bb;
+}
+
+.button-back:focus,
+.button-back:hover {
+  color: #3466bb;
+  background-color: white;
+}
+
 canvas {
   position: absolute;
   top: 0;
