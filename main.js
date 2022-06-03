@@ -136,7 +136,7 @@ function validateForm(event) {
     if($("#contact-form-name").val() == ''){
         $("#contact-form-name").removeClass("form-control light-blue-background");
         $("#contact-form-name").addClass("form-control light-blue-background invalid-form");
-        $("#warning-msg-name").text("Please provide a valid name")
+        $("#warning-msg-name").text("Please provide your name")
         isSubmit = false;
     }
     if(!$("#contact-form-email").val().toLowerCase()
@@ -151,13 +151,13 @@ function validateForm(event) {
     if($("#contact-form-inst").val() == ''){
         $("#contact-form-inst").removeClass("form-control light-blue-background");
         $("#contact-form-inst").addClass("form-control light-blue-background invalid-form");
-        $("#warning-msg-inst").text("Please provide a valid institution")
+        $("#warning-msg-inst").text("Please provide your institution")
         isSubmit = false;
     }
     if($("#contact-form-moreinfo").val() == ''){
         $("#contact-form-moreinfo").removeClass("form-control light-blue-background");
         $("#contact-form-moreinfo").addClass("form-control light-blue-background invalid-form");
-        $("#warning-msg-msg").text("Please provide a valid information")
+        $("#warning-msg-msg").text("Please complete this section")
         isSubmit = false;
     }
     return isSubmit;
