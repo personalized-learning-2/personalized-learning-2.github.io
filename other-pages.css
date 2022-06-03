@@ -253,3 +253,8 @@ ul.match-indent {
   font-size: 80%;
   color: #dc3545;
 }
+
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
