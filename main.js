@@ -104,6 +104,7 @@ function releaseNav(item) {
 
 }
 
+
 function contactUs() {
     var form = $('#contact-us-form');
 
@@ -127,6 +128,39 @@ function contactUs() {
     window.open(uri);
 
     return false;
+}
+
+
+function validateForm(event) {
+    var isSubmit = true;
+    if($("#contact-form-name").val() == ''){
+        $("#contact-form-name").removeClass("form-control light-blue-background");
+        $("#contact-form-name").addClass("form-control light-blue-background invalid-form");
+        $("#warning-msg-name").text("Please provide your name")
+        isSubmit = false;
+    }
+    if(!$("#contact-form-email").val().toLowerCase()
+                .match(
+                /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                )){
+        $("#contact-form-email").removeClass("form-control light-blue-background");
+        $("#contact-form-email").addClass("form-control light-blue-background invalid-form");
+        $("#warning-msg-email").text("Please provide a valid email")
+        isSubmit = false;
+    }
+    if($("#contact-form-inst").val() == ''){
+        $("#contact-form-inst").removeClass("form-control light-blue-background");
+        $("#contact-form-inst").addClass("form-control light-blue-background invalid-form");
+        $("#warning-msg-inst").text("Please provide your institution")
+        isSubmit = false;
+    }
+    if($("#contact-form-moreinfo").val() == ''){
+        $("#contact-form-moreinfo").removeClass("form-control light-blue-background");
+        $("#contact-form-moreinfo").addClass("form-control light-blue-background invalid-form");
+        $("#warning-msg-msg").text("Please complete this section")
+        isSubmit = false;
+    }
+    return isSubmit;
 }
 
 // var $form = $('form#contact-us-form');
@@ -163,3 +197,4 @@ function contactUs() {
 //     function() {console.log("Successful post!");}
 //   );
 // })
+
