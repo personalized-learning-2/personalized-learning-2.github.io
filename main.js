@@ -17,18 +17,20 @@ function draw() {
   }
 }
 
-function initialize() {
+function initialize(status) {
     try {
-        draw();
+        //draw();
 
         let returning = localStorage['visited'];
         if (!returning) {
             localStorage['visited'] = true;
         }
 
-        $('#covid-modal').modal({
-            show: !returning
-        });
+        $("#" + status + "-modal").modal("show");
+
+        // $("#" + status + "-modal").modal({
+        //     show: !returning
+        // });
     } catch(err) {}
 }
 
@@ -224,8 +226,11 @@ function submitData_contactform(e) {
     e.preventDefault();
     if(validateOnSubmit_contactform()){
         $(":button[type=submit]").prop('disabled', true);
-        $("input").prop('disabled', true);
-        $("textarea").prop('disabled', true);
+        $("#contact-form-name").prop('disabled', true);
+        $("#contact-form-email").prop('disabled', true);
+        $("#contact-form-inst").prop('disabled', true);
+        $("#contact-form-moreinfo").prop('disabled', true);
+        $(":input[type=checkbox]").prop('disabled', true);
         var formdata = {
             email: $("#contact-form-email").val(),
             name: $("#contact-form-name").val(),
@@ -365,8 +370,11 @@ function submitData_home(e) {
   e.preventDefault();
   if(validateOnSubmit_home()){
       $(":button[type=submit]").prop('disabled', true);
-      $("input").prop('disabled', true);
-      $("textarea").prop('disabled', true);
+      $("#contact-form-name").prop('disabled', true);
+      $("#contact-form-email").prop('disabled', true);
+      $("#contact-form-inst").prop('disabled', true);
+      $("#contact-form-moreinfo").prop('disabled', true);
+      $(":input[type=checkbox]").prop('disabled', true);
       var path = window.location.pathname;
       var page = path.split("/").pop();
       var formdata = {
@@ -389,19 +397,23 @@ function submitData_home(e) {
           data: formdata,
           dataType: "json",
           success: function(result){
-              alert("Thank you for reaching out!");
+              initialize("success");
               $(":button[type=submit]").prop('disabled', false);
-              $("input").prop('disabled', false);
-              $("textarea").prop('disabled', false);
-              $("input").val("");
-              $("textarea").val("");
-              $( 'input[type="checkbox"]' ).prop('checked', false);
+              $("#contact-form-name").prop('disabled', false).val("");
+              $("#contact-form-email").prop('disabled', false).val("");
+              $("#contact-form-inst").prop('disabled', false).val("");
+              $("#contact-form-moreinfo").prop('disabled', false).val("");
+              $(":input[type=checkbox]").prop('disabled', false);
+              $(":input[type=checkbox]").prop('checked', false);
           },
           error: function(result){
-              alert("Oops...Sorry!");
+              initialize("failure");
               $(":button[type=submit]").prop('disabled', false);
-              $("input").prop('disabled', false);
-              $("textarea").prop('disabled', false);
+              $("#contact-form-name").prop('disabled', false);
+              $("#contact-form-email").prop('disabled', false);
+              $("#contact-form-inst").prop('disabled', false);
+              $("#contact-form-moreinfo").prop('disabled', false);
+              $(":input[type=checkbox]").prop('disabled', false);
       }})
       
   }
@@ -415,8 +427,10 @@ function submitData_home(e) {
       e.preventDefault();
       if(validateOnSubmit_contactform()){
           $(":button[type=submit]").prop('disabled', true);
-          $("input").prop('disabled', true);
-          $("textarea").prop('disabled', true);
+          $("#contact-form-name").prop('disabled', true);
+          $("#contact-form-email").prop('disabled', true);
+          $("#contact-form-inst").prop('disabled', true);
+          $("#contact-form-moreinfo").prop('disabled', true);
           var path = window.location.pathname;
           var page = path.split("/").pop();
           var formdata = {
@@ -439,19 +453,20 @@ function submitData_home(e) {
               data: formdata,
               dataType: "json",
               success: function(result){
-                alert("Thank you for reaching out!");
+                initialize("success");
                 $(":button[type=submit]").prop('disabled', false);
-                $("input").prop('disabled', false);
-                $("textarea").prop('disabled', false);
-                $("input").val("");
-                $("textarea").val("");
-                $( 'input[type="checkbox"]' ).prop('checked', false);
+                $("#contact-form-name").prop('disabled', false).val("");
+                $("#contact-form-email").prop('disabled', false).val("");
+                $("#contact-form-inst").prop('disabled', false).val("");
+                $("#contact-form-moreinfo").prop('disabled', false).val("");
               },
               error: function(result){
-                alert("Oops...Sorry!");
+                initialize("failure");
                 $(":button[type=submit]").prop('disabled', false);
-                $("input").prop('disabled', false);
-                $("textarea").prop('disabled', false);
+                $("#contact-form-name").prop('disabled', false);
+                $("#contact-form-email").prop('disabled', false);
+                $("#contact-form-inst").prop('disabled', false);
+                $("#contact-form-moreinfo").prop('disabled', false);
           }})
       }
       else{
