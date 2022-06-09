@@ -26,11 +26,11 @@ function initialize(status) {
             localStorage['visited'] = true;
         }
 
-        $("#" + status + "-modal").modal("show");
+        //$("#" + status + "-modal").modal("show");
 
-        // $("#" + status + "-modal").modal({
-        //     show: !returning
-        // });
+        $("#" + status + "-modal").modal({
+            show: !returning
+        });
     } catch(err) {}
 }
 
