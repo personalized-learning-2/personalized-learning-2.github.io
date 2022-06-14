@@ -455,7 +455,7 @@ function submitData_home(e) {
               data: formdata,
               dataType: "json",
               success: function(result){
-                initialize("success");
+                contactModal("success");
                 $(":button[type=submit]").prop('disabled', false);
                 $("#contact-form-name").prop('disabled', false).val("");
                 $("#contact-form-email").prop('disabled', false).val("");
@@ -463,7 +463,7 @@ function submitData_home(e) {
                 $("#contact-form-moreinfo").prop('disabled', false).val("");
               },
               error: function(result){
-                initialize("failure");
+                contactModal("failure");
                 $(":button[type=submit]").prop('disabled', false);
                 $("#contact-form-name").prop('disabled', false);
                 $("#contact-form-email").prop('disabled', false);
