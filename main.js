@@ -19,19 +19,21 @@ function draw() {
 
 function initialize(status) {
     try {
-        //draw();
+        draw();
 
         let returning = localStorage['visited'];
         if (!returning) {
             localStorage['visited'] = true;
         }
 
-        //$("#" + status + "-modal").modal("show");
-
         $("#" + status + "-modal").modal({
             show: !returning
         });
     } catch(err) {}
+}
+
+function contactModal(status) {
+    $("#" + status + "-modal").modal("show");
 }
 
 function pageNavSetup() {
@@ -397,7 +399,7 @@ function submitData_home(e) {
           data: formdata,
           dataType: "json",
           success: function(result){
-              initialize("success");
+              contactModal("success");
               $(":button[type=submit]").prop('disabled', false);
               $("#contact-form-name").prop('disabled', false).val("");
               $("#contact-form-email").prop('disabled', false).val("");
@@ -407,7 +409,7 @@ function submitData_home(e) {
               $(":input[type=checkbox]").prop('checked', false);
           },
           error: function(result){
-              initialize("failure");
+              contactModal("failure");
               $(":button[type=submit]").prop('disabled', false);
               $("#contact-form-name").prop('disabled', false);
               $("#contact-form-email").prop('disabled', false);
