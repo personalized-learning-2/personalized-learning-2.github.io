@@ -67,7 +67,7 @@ function releaseNotesSetup() {
     // maybe something to do with it happening before the DOM is loaded?
 
 
-    $("#release-notes-body").load("release-notes_4.0.html");
+    $("#release-notes-body").load("release-notes_4.1.html");
     // console.log($("#release-notes_4.0"));
 
 }
