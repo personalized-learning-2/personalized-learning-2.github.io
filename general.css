@@ -1,7 +1,14 @@
 body {
-  font-family: "Nunito", "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #000;
   font-size: 1.125rem;
+}
+
+h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  color:#000;
+  font-size: 1rem;
+
 }
 
 #navigation {

@@ -82,9 +82,57 @@ canvas {
   width: 100%;
 }
 
+#home-pink-blur {
+  position:absolute;
+  top:5%;
+  right:35%;
+  width: 300px;
+  height: 300px;
+  background: #F1949E;
+  filter: blur(100px);
+  opacity: 0.9;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
 
+#home-yellow-blur {
+  position:absolute;
+  top:30%;
+  right:55%;
+  width: 200px;
+  height: 200px;
+  background: #F8C362;
+  filter: blur(100px);
+  opacity: 0.9;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+#home-blue-blur {
+  position:absolute;
+  top:65%;
+  left: 37%;
+  width: 300px;
+  height: 300px;
+  background: #5AB0FF;
+  filter: blur(100px);
+  z-index: 1;
+}
+
+#home-impact-yellow-blur {
+  position:absolute;
+  top:80%;
+  right:-25%;
+  width: 400px;
+  height: 400px;
+  background: #F8C362;
+  filter: blur(150px);
+  opacity: 0.9;
+  transform: rotate(-45deg);
+}
 
 .home-slogan {
+  font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 64px;
@@ -92,24 +140,50 @@ canvas {
 }
 
 .home-title {
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
   line-height: 53px;
 }
 
-.home-h2 {
-  font-family: 'Roboto Slab';
+.home-h1 {
+  font-family: 'Roboto Slab', sans-serif;
   font-weight: 800; 
   font-size: 48px; 
   line-height: 63px;
 }
 
-.home-h3 {
-  font-family: 'Roboto Slab';
+.home-h2 {
+  font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
+  line-height: 53px;
+}
+
+.home-impact-h2 {
+  font-family: 'Open Sans';
+  color: #66AA5D;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 53px;
+}
+
+.home-impact {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.home-h3 {
+  font-family: 'Roboto Slab', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
   line-height: 53px;
 }
 
