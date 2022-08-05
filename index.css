@@ -207,13 +207,13 @@ canvas {
   font-size: 24px;
   line-height: 33px;
 }
-
+/* 
 .home-join-button-content {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-}
+} */
 
 .home-offering-content {
   box-sizing: border-box;
@@ -296,10 +296,11 @@ canvas {
 }
 
 .pl2-logo {
-  height: 36px;
-  width: 240px;
+  height: 70px;
+  width: 200px;
   margin-left: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .nav-item {

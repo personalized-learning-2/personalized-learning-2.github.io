@@ -41,7 +41,7 @@ function pageNavSetup() {
 
   // $(document).ready(function() {
 
-    $("#banner").load("banner.html", function() {
+    // $("#banner").load("banner.html", function() {
       $("#header").load("header.html", function() {
         $("#footer").load("footer.html", function() {
           var selectedPage = $("#page-title").text().toLowerCase();
@@ -49,7 +49,7 @@ function pageNavSetup() {
           document.getElementById("content").style.display = "block";
         });
       });
-    });
+    // });
 
   // }); 
 
