@@ -7,8 +7,9 @@
 }
 
 .pl2-primary {
-  color: #3466bb;
+  color: #000000;
   background-color: white;
+  border-color: #000000;
 }
 
 .pl2-primary:focus,
@@ -81,10 +82,73 @@ canvas {
   width: 100%;
 }
 
-#home-title {
-  font-weight: 600;
-  font-size: 1.5rem;
+
+
+.home-slogan {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 125%;
 }
+
+.home-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 53px;
+}
+
+.home-h2 {
+  font-family: 'Roboto Slab';
+  font-weight: 800; 
+  font-size: 48px; 
+  line-height: 63px;
+}
+
+.home-h3 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+}
+
+.home-helping-subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 53px;
+}
+
+.home-helping-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.home-join-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.home-join-button-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.home-offering-content {
+  box-sizing: border-box;
+  width: 25%;
+  height: 509px;
+  background: #FFFFFF;
+  border: 4px solid #000000;
+}
+
 
 #home-blurb {
   padding-top: 30px;
@@ -92,9 +156,11 @@ canvas {
 }
 
 .btn-primary {
-  background-color: #3466bb;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  background-color: white;
   font-weight: 600;
-  border: none;
   font-size: 0.8rem;
   padding-left: 15px;
   padding-right: 15px;

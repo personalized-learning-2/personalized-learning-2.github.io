@@ -40,9 +40,6 @@ body {
   letter-spacing: 1px;
 }
 
-.btn {
-  /* font-size: 0.9rem; */
-}
 
 .margin-0 {
   margin: 0;
@@ -267,4 +264,8 @@ a {
 
 .t-purple {
   color: #9a46ab;
+}
+
+.t-green {
+  color: #66AA5D;
 }
