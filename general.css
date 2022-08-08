@@ -88,10 +88,10 @@ h1 {
 }*/
 
 .footer-new {
-  background-color: #3466bb;
+  background-color: #525252;
   color: white;
-  font-size: 0.9rem;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 700;
   margin-top: 60px;
 }
 
@@ -128,11 +128,50 @@ h1 {
 }
 
 .footer-collaborator-images img {
-  height: 2.5rem;
+  height: 2.3rem;
   margin-right: 0.5rem;
 }
+
+
+.footer-collaborator-images img[src="images/pitt-logo.png"] {
+  margin-right: 0rem;
+}
+
 .footer-collaborator-images img[src="images/learnlab-logo-white.png"] {
-  height: 1.6rem; /** Not sure why, but the LL logo appears larger than others */
+  position: relative;
+  bottom: 4px;
+  height: 1.3em;
+  margin-right: 0.6rem;
+}
+
+#rkmf-logo {
+  width: 1.9em;
+  height: 1.9em;
+  margin-right: 0rem;
+}
+
+#czi-logo {
+  height: 2em;
+  margin-right: -0.5rem;
+}
+
+
+.footer-collaborator-images img[src="images/plus-logo-2.svg"] {
+  position: relative;
+  right: 9px;
+  height: 90%; /** Not sure why, but the LL logo appears larger than others */
+}
+
+.footer-last-line {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.rainbow-bar {
+  width: 1440px;
+  height: 18px;
+  background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
 }
 
 #cue-logo {
