@@ -168,6 +168,49 @@ h1 {
   line-height: 25px;
 }
 
+#mc_embed_signup {
+  background-color: #525252;
+}
+
+/* #mc_embed_signup :focus {
+  background-color: #525252;
+  border: none;
+} */
+
+/* #mce-EMAIL {
+  background-color: #525252; 
+  border: none; 
+  border-bottom: 4px solid white; 
+  border-radius: 0
+} */
+
+#email-div input[type="email"] {
+  color: white;
+  background-color: #525252; 
+  border: none; 
+  border-bottom: 4px solid white; 
+  border-radius: 0
+}
+
+#email-div input[type="image"] {
+  position: relative;
+  right: 11px;
+}
+
+#email-div input[type="email"]:focus {
+  color: white;
+  outline: none;
+  caret-color: white;
+}
+
+#email-div input[type="email"]:autofill {
+  color: white;
+  background-color: #525252; 
+  outline: none;
+  caret-color: white;
+}
+
+
 .rainbow-bar {
   width: 1440px;
   height: 18px;
