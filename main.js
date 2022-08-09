@@ -514,3 +514,16 @@ function submitData_home(e) {
 //   );
 // })
 
+function getScrollPercentage() {
+    $(window).on('scroll', function(){
+        var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height();
+      
+        var scrollPercent = 1 - (s / (d - c));
+        var scrollWidth = scrollPercent * $(window).innerWidth();
+        console.log(scrollPercent);
+        console.log(scrollWidth);
+        $("#rainbow-bar-top-cover").css("width", scrollWidth);
+      })
+}

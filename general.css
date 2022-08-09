@@ -211,7 +211,26 @@ h1 {
 }
 
 
-.rainbow-bar {
+#rainbow-bar-top {
+  position:fixed;
+  z-index:100;
+  top: 0px;
+  width: 1440px;
+  height: 18px;
+  background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
+}
+
+#rainbow-bar-top-cover {
+  position:fixed;
+  z-index:100;
+  top: 0px;
+  right: 0px;
+  height: 18px;
+  background-color: #F5F5F5;
+  transform: rotateY(180deg);
+}
+
+#rainbow-bar-bottom {
   width: 1440px;
   height: 18px;
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
