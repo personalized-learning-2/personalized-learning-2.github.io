@@ -222,7 +222,7 @@ h1 {
 
 #rainbow-bar-top-cover {
   position:fixed;
-  z-index:100;
+  z-index:101;
   top: 0px;
   right: 0px;
   height: 18px;
