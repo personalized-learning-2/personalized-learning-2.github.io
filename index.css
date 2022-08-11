@@ -135,7 +135,7 @@ canvas {
   font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 125%;
 }
 
@@ -143,14 +143,14 @@ canvas {
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 96px;
+  font-size: 6rem;
   line-height: 53px;
 }
 
 .home-h1 {
   font-family: 'Roboto Slab', sans-serif;
   font-weight: 800; 
-  font-size: 48px; 
+  font-size: 3rem; 
   line-height: 63px;
 }
 
@@ -158,7 +158,7 @@ canvas {
   font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 44px;
+  font-size: 2.75rem;
   line-height: 53px;
 }
 
@@ -167,7 +167,7 @@ canvas {
   color: #66AA5D;
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 53px;
 }
 
@@ -175,7 +175,7 @@ canvas {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
 }
 
@@ -183,7 +183,7 @@ canvas {
   font-family: 'Roboto Slab', sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 2.25rem;
   line-height: 53px;
 }
 
@@ -197,14 +197,14 @@ canvas {
 .home-helping-content {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 27px;
 }
 
 .home-join-content {
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   line-height: 33px;
 }
 /* 
@@ -216,9 +216,8 @@ canvas {
 } */
 
 .home-offering-content {
-  box-sizing: border-box;
-  width: 25%;
-  height: 509px;
+  /* width: 25%; */
+  /* height: 35rem; */
   background: #FFFFFF;
   border: 4px solid #000000;
 }
@@ -394,10 +393,10 @@ canvas {
 }
 
 .carousel-text-area {
-  font-size: 32px;
+  font-size: 2rem;
   background-color: white;
   border: 4px solid black;
-  max-width: 70%
+  max-width: 70%;
 }
 
 .carousel-control-next-icon {

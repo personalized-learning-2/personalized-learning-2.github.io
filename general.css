@@ -215,7 +215,8 @@ h1 {
   position:fixed;
   z-index:100;
   top: 0px;
-  width: 1440px;
+  left: 0px;
+  right: 0px;
   height: 18px;
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
 }
@@ -227,11 +228,10 @@ h1 {
   right: 0px;
   height: 18px;
   background-color: #FFFBF3;
-  transform: rotateY(180deg);
 }
 
 #rainbow-bar-bottom {
-  width: 1440px;
+  width: 100vw;
   height: 18px;
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
 }
@@ -302,6 +302,36 @@ h3,
   .faq-title {
     font-size: 1.25rem;
   }
+
+  .home-slogan {
+    font-size: 7vw;
+  }
+
+  .carousel-text-area {
+    font-size: 1rem;
+  }
+
+  #home-blue-blur {
+    position:absolute;
+    top:75%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    filter: blur(30px);
+  }
+
+  #home-impact-yellow-blur {
+    position:absolute;
+    top:70%;
+    right:-25%;
+    width: 100px;
+    height: 100px;
+    background: #F8C362;
+    filter: blur(50px);
+    opacity: 0.9;
+    transform: rotate(-45deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -315,6 +345,36 @@ h3,
 
   .faq-title {
     font-size: 1.25rem;
+  }
+
+  .home-slogan {
+    font-size: 7vw;
+  }
+
+  .carousel-text-area {
+    font-size: 1.5rem;
+  }
+
+  #home-blue-blur {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:70%;
+    width: 200px;
+    height: 200px;
+    filter: blur(80px);
+  }
+
+  #home-impact-yellow-blur {
+    position:absolute;
+    top:100%;
+    right:-25%;
+    width: 50%;
+    height: 50%;
+    background: #F8C362;
+    filter: blur(80px);
+    opacity: 0.9;
+    transform: rotate(-45deg);
   }
 }
 

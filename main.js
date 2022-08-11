@@ -520,10 +520,9 @@ function getScrollPercentage() {
             d = $(document).height(),
             c = $(window).height();
       
-        var scrollPercent = 1 - (s / (d - c));
-        var scrollWidth = scrollPercent * $(window).innerWidth();
-        console.log(scrollPercent);
-        console.log(scrollWidth);
-        $("#rainbow-bar-top-cover").css("width", scrollWidth);
+        var scrollPercent = (1 - (s / (d - c))) * 100;
+        // var scrollWidth = scrollPercent * $(window).width();
+        console.log(scrollPercent.toString() + "vw");
+        $("#rainbow-bar-top-cover").css("width", scrollPercent.toString() + "vw");
       })
 }
