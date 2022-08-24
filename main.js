@@ -62,12 +62,12 @@ function pageNavSetup() {
 function releaseNotesSetup() {
   // this loads the most current release notes on get
   // MUST BE UPDATED WITH NEW RELEASE NOTES
-    $("#release-notes_4.2").addClass("font-weight-bold");
+    $("#release-notes_4.3").addClass("font-weight-bold");
     //BUG ^ this bold isn't working and I have no idea why
     // maybe something to do with it happening before the DOM is loaded?
 
 
-    $("#release-notes-body").load("release-notes_4.2.html");
+    $("#release-notes-body").load("release-notes_4.3.html");
     // console.log($("#release-notes_4.0"));
 
 }
