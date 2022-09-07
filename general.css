@@ -92,7 +92,6 @@ h1 {
   color: white;
   font-size: 20px;
   font-weight: 700;
-  margin-top: 60px;
 }
 
 #footer-email {
@@ -189,7 +188,8 @@ h1 {
   background-color: #525252; 
   border: none; 
   border-bottom: 4px solid white; 
-  border-radius: 0
+  border-radius: 0;
+  cursor: pointer;
 }
 
 #email-div input[type="image"] {
@@ -424,7 +424,7 @@ a {
 }
 
 .m-yellow {
-  color: #fcc33d;
+  color: #fdc247;
 }
 
 .a-green {
@@ -437,4 +437,66 @@ a {
 
 .t-green {
   color: #66AA5D;
+}
+
+.t-grey {
+  color: #545454;
+}
+
+.header1 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 58px;
+}
+
+.header2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.header3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.body1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.body2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.caption {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.thin-border {
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+
+.thick-border {
+  border: 3px solid #000000;
+  border-radius: 2px;
 }
