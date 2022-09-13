@@ -493,7 +493,7 @@ a {
 
 .thin-border {
   border: 2px solid #000000;
-  border-radius: 10px;
+  border-radius: 2px;
 }
 
 .thick-border {
