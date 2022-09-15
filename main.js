@@ -41,7 +41,7 @@ function pageNavSetup() {
 
   // $(document).ready(function() {
 
-    $("#banner").load("banner.html", function() {
+    // $("#banner").load("banner.html", function() {
       $("#header").load("header.html", function() {
         $("#footer").load("footer.html", function() {
           var selectedPage = $("#page-title").text().toLowerCase();
@@ -49,7 +49,7 @@ function pageNavSetup() {
           document.getElementById("content").style.display = "block";
         });
       });
-    });
+    // });
 
   // }); 
 
@@ -514,3 +514,15 @@ function submitData_home(e) {
 //   );
 // })
 
+function getScrollPercentage() {
+    $(window).on('scroll', function(){
+        var s = $(window).scrollTop(),
+            d = $(document).height(),
+            c = $(window).height();
+      
+        var scrollPercent = (1 - (s / (d - c))) * 100;
+        // var scrollWidth = scrollPercent * $(window).width();
+        console.log(scrollPercent.toString() + "vw");
+        $("#rainbow-bar-top-cover").css("width", scrollPercent.toString() + "vw");
+      })
+}

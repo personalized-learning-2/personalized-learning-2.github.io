@@ -1,0 +1,14 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle opacity="0.2" cx="50" cy="50" r="50" fill="url(#paint0_radial_482_3343)"/>
+<rect x="53.4426" y="31.3279" width="26.5574" height="5.90164" fill="#FDC247"/>
+<rect x="53.4426" y="56.9016" width="26.5574" height="5.90164" fill="#FDC247"/>
+<rect x="53.4426" y="69.6885" width="26.5574" height="6.88525" fill="#FDC247"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M33.6793 62.7233L26.1628 55.2067L21.6098 59.7598L29.1263 67.2763L22.4146 73.988L26.9676 78.541L33.6793 71.8293L40.391 78.541L44.944 73.988L38.2323 67.2763L45.7488 59.7598L41.1958 55.2068L33.6793 62.7233Z" fill="#FDC247"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M30.0608 37.4998V47.5606H36.4998V37.4998H46.5606V31.0608H36.4998V21L30.0608 21V31.0608H20V37.4998H30.0608Z" fill="#FDC247"/>
+<defs>
+<radialGradient id="paint0_radial_482_3343" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(50 50) rotate(90) scale(50)">
+<stop offset="0.416667" stop-color="#FDC247"/>
+<stop offset="1" stop-color="white" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

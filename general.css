@@ -1,7 +1,14 @@
 body {
-  font-family: "Nunito", "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #000;
   font-size: 1.125rem;
+}
+
+h1 {
+  font-family: 'Roboto Slab', sans-serif;
+  color:#000;
+  font-size: 1rem;
+
 }
 
 #navigation {
@@ -40,9 +47,6 @@ body {
   letter-spacing: 1px;
 }
 
-.btn {
-  /* font-size: 0.9rem; */
-}
 
 .margin-0 {
   margin: 0;
@@ -84,11 +88,10 @@ body {
 }*/
 
 .footer-new {
-  background-color: #3466bb;
+  background-color: #525252;
   color: white;
-  font-size: 0.9rem;
-  font-weight: 300;
-  margin-top: 60px;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 #footer-email {
@@ -124,11 +127,114 @@ body {
 }
 
 .footer-collaborator-images img {
-  height: 2.5rem;
+  height: 2.3rem;
   margin-right: 0.5rem;
 }
+
+
+.footer-collaborator-images img[src="images/pitt-logo.png"] {
+  margin-right: 0rem;
+}
+
 .footer-collaborator-images img[src="images/learnlab-logo-white.png"] {
-  height: 1.6rem; /** Not sure why, but the LL logo appears larger than others */
+  position: relative;
+  bottom: 4px;
+  height: 1.3em;
+  margin-right: 0.6rem;
+}
+
+#rkmf-logo {
+  width: 1.9em;
+  height: 1.9em;
+  margin-right: 0rem;
+}
+
+#czi-logo {
+  height: 2em;
+  margin-right: -0.5rem;
+}
+
+
+.footer-collaborator-images img[src="images/plus-logo-2.svg"] {
+  position: relative;
+  right: 9px;
+  height: 90%; /** Not sure why, but the LL logo appears larger than others */
+}
+
+.footer-last-line {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+#mc_embed_signup {
+  background-color: #525252;
+}
+
+/* #mc_embed_signup :focus {
+  background-color: #525252;
+  border: none;
+} */
+
+/* #mce-EMAIL {
+  background-color: #525252; 
+  border: none; 
+  border-bottom: 4px solid white; 
+  border-radius: 0
+} */
+
+#email-div input[type="email"] {
+  color: white;
+  background-color: #525252; 
+  border: none; 
+  border-bottom: 4px solid white; 
+  border-radius: 0;
+  cursor: pointer;
+}
+
+#email-div input[type="image"] {
+  position: relative;
+  right: 11px;
+}
+
+#email-div input[type="email"]:focus {
+  color: white;
+  outline: none;
+  caret-color: white;
+}
+
+#email-div input[type="email"]:autofill {
+  color: white;
+  background-color: #525252; 
+  outline: none;
+  caret-color: white;
+}
+
+
+#rainbow-bar-top {
+  position:fixed;
+  z-index:100;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 18px;
+  background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
+}
+
+#rainbow-bar-top-cover {
+  position:fixed;
+  z-index:101;
+  top: 0px;
+  right: 0px;
+  height: 18px;
+  width: 100vw;
+  background-color: #FFFBF3;
+}
+
+#rainbow-bar-bottom {
+  width: 100vw;
+  height: 18px;
+  background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
 }
 
 #cue-logo {
@@ -197,6 +303,36 @@ h3,
   .faq-title {
     font-size: 1.25rem;
   }
+
+  .home-slogan {
+    font-size: 7vw;
+  }
+
+  .carousel-text-area {
+    font-size: 1rem;
+  }
+
+  #home-blue-blur {
+    position:absolute;
+    top:75%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+    filter: blur(30px);
+  }
+
+  #home-impact-yellow-blur {
+    position:absolute;
+    top:70%;
+    right:-25%;
+    width: 100px;
+    height: 100px;
+    background: #F8C362;
+    filter: blur(50px);
+    opacity: 0.9;
+    transform: rotate(-45deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -210,6 +346,36 @@ h3,
 
   .faq-title {
     font-size: 1.25rem;
+  }
+
+  .home-slogan {
+    font-size: 7vw;
+  }
+
+  .carousel-text-area {
+    font-size: 1.5rem;
+  }
+
+  #home-blue-blur {
+    position:absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top:70%;
+    width: 200px;
+    height: 200px;
+    filter: blur(80px);
+  }
+
+  #home-impact-yellow-blur {
+    position:absolute;
+    top:100%;
+    right:-25%;
+    width: 50%;
+    height: 50%;
+    background: #F8C362;
+    filter: blur(80px);
+    opacity: 0.9;
+    transform: rotate(-45deg);
   }
 }
 
@@ -258,7 +424,7 @@ a {
 }
 
 .m-yellow {
-  color: #fcc33d;
+  color: #fdc247;
 }
 
 .a-green {
@@ -267,4 +433,70 @@ a {
 
 .t-purple {
   color: #9a46ab;
+}
+
+.t-green {
+  color: #66AA5D;
+}
+
+.t-grey {
+  color: #545454;
+}
+
+.header1 {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 58px;
+}
+
+.header2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.header3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.body1 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+}
+
+.body2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.caption {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.thin-border {
+  border: 2px solid #000000;
+  border-radius: 2px;
+}
+
+.thick-border {
+  border: 3px solid #000000;
+  border-radius: 2px;
 }
