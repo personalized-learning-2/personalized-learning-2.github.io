@@ -382,17 +382,17 @@ h3,
 /* Accessibility fixes below */
 
 #about-nav > a,
-#research-nav > a,
+#solutions-nav > a,
 #impact-nav > a,
-#faq-nav > a {
+#join-nav > a {
   /* adjustments to fix contrast fail */
   color: rgb(97, 97, 97);
 }
 
 #about-nav > a:hover,
-#research-nav > a:hover,
+#solutions-nav > a:hover,
 #impact-nav > a:hover,
-#faq-nav > a:hover {
+#join-nav > a:hover {
   /* adjustments to fix contrast fail */
   color: rgb(0, 0, 0);
 }
