@@ -285,3 +285,9 @@ ul.match-indent {
   cursor: pointer;
   outline: none;
 }
+
+#paper-airplane-graphic {
+  position: absolute;
+  left: 65%;
+  top: 25%;
+}

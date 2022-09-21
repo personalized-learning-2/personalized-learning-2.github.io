@@ -13,23 +13,28 @@
   </head>
 
 <body>
-    <div id="content" style="display: none; background: #FFFBF3;">
         <div id="page-title" style="display: none;">about</div>
         <div id="banner"></div>
-        <div id="header"></div>
+        <div id="header" class="sticky-top"></div>
 
         <div class="container-fluid p-3 p-sm-0">
+            <img alt="paper airplane" id="paper-airplane-graphic" src="images/bgs/airplane.png" class="d-none d-lg-block" />
             <div class="container">
+                
                 <div class="container row px-5 mr-5 ml-2 my-5 py-5">
+                    
                     <p class="header1 mt-1">
                         PLUS aspires to bridge <br>
-                        opportunity gaps in math through <br>
-                        personalized learning.
+                        opportunity gaps in math <br>
+                        through personalized learning.
                     </p>
                     
                 </div>
-
-                <div class="container row px-5 mr-5 ml-2 mt-5 pt-5">
+                
+        </div>
+        <div id="gradient-bg" class="container-fluid gradient-bg py-5" style="background-image:url(images/bgs/about_us_bg-min.png)">
+            <div class="container">
+                <div class="container row px-5 ml-2 mt-5 pt-5">
                     <p class="header2">
                         Our Vision
                     </p>
@@ -42,7 +47,7 @@
                     </p>
                 </div>
 
-                <div class="container px-5 mr-5 ml-2 mt-4 pt-5">
+                <div class="container px-5 ml-2 mt-4 pt-5">
                     <p class="header2">
                         Our Mission
                     </p>
@@ -51,8 +56,12 @@
                         Our mission is to double the rate of math learning for participating students. We do this by increasing the number of hours students spend practicing math outside the classroom, guided by a trained educator who acts as both a tutor and mentor.
                     </p>
                 </div>
+            </div>
+        </div>  
 
-                <div class="container px-5 mr-5 ml-2 mt-4 mb-5 py-5">
+        <div class="container-fluid p-3 p-sm-0">
+            <div class="container">
+                <div class="container px-5 ml-2 mt-4 mb-5 py-5">
                     <p class="header2">
                         What does PLUS mean?
                     </p>
@@ -64,7 +73,6 @@
             </div>
         </div>    
         <div id="footer"></div>
-    </div>
     <script>
         getScrollPercentage();
     </script>
