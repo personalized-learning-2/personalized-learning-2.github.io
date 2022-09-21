@@ -227,12 +227,12 @@ h1 {
   top: 0px;
   right: 0px;
   height: 18px;
-  width: 100vw;
+  width: 100%;
   background-color: #FFFBF3;
 }
 
 #rainbow-bar-bottom {
-  width: 100vw;
+  width: 100%;
   height: 18px;
   background: linear-gradient(90deg, #F3A0A2 0%, #F7C585 25.52%, #7EC1F8 47.92%, #A5CEBA 73.44%, #E6AB75 100%);
 }
@@ -499,4 +499,12 @@ a {
 .thick-border {
   border: 3px solid #000000;
   border-radius: 2px;
+}
+
+.gradient-bg {
+  background-size: cover;
+}
+
+#header {
+  border-bottom: 3px solid #818181;
 }

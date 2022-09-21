@@ -522,7 +522,7 @@ function getScrollPercentage() {
       
         var scrollPercent = (1 - (s / (d - c))) * 100;
         // var scrollWidth = scrollPercent * $(window).width();
-        console.log(scrollPercent.toString() + "vw");
-        $("#rainbow-bar-top-cover").css("width", scrollPercent.toString() + "vw");
+        // console.log(scrollPercent.toString() + "vw");
+        $("#rainbow-bar-top-cover").css("width", scrollPercent.toString() + "%");
       })
 }
