@@ -243,6 +243,11 @@ ul.match-indent {
   border: 1px solid #000000;
 }
 
+.lesson-structure-card {
+  margin-left: 2.5em;
+  border: 1px solid #000000;
+}
+
 .card {
   border: none;
   background: #FFFBF3;

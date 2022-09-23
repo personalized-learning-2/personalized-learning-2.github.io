@@ -431,8 +431,16 @@ a {
   color: #0f7453;
 }
 
+.t-yellow {
+  color: #fdc247;
+}
+
+.t-pink {
+  color: #F06493;
+}
+
 .t-purple {
-  color: #9a46ab;
+  color: #B075DE;
 }
 
 .t-green {
@@ -506,5 +514,5 @@ a {
 }
 
 #header {
-  border-bottom: 3px solid #818181;
+  border-bottom: 5px solid rgba(253, 194, 71, 0.25);
 }
