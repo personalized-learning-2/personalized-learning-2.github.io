@@ -296,3 +296,14 @@ ul.match-indent {
   left: 65%;
   top: 25%;
 }
+
+#dot-line {
+  position: absolute;
+  top: -60px;
+  left: -20px;
+}
+
+#dot-line-img {
+  width: 190px;
+  height: auto;
+}
