@@ -299,11 +299,16 @@ ul.match-indent {
 
 #dot-line {
   position: absolute;
-  top: -60px;
-  left: -20px;
+  top: -5%;
+  left: 0%;
 }
 
 #dot-line-img {
   width: 190px;
   height: auto;
+}
+
+.competency-dot {
+  position: absolute;
+  left: 0%;
 }
