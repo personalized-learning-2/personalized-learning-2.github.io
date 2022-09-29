@@ -90,8 +90,6 @@ h1 {
 .footer-new {
   background-color: #525252;
   color: white;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 #footer-email {
@@ -475,6 +473,16 @@ a {
   line-height: 33px;
 }
 
+.header4 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+}
+
+
 .body1 {
   font-family: 'Open Sans';
   font-style: normal;
@@ -516,3 +524,4 @@ a {
 #header {
   border-bottom: 5px solid rgba(253, 194, 71, 0.25);
 }
+
