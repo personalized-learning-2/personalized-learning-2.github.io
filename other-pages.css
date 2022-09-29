@@ -250,6 +250,8 @@ ul.match-indent {
 
 .card {
   border: none;
+  background-color: transparent
+  
 }
 
 .publication {
