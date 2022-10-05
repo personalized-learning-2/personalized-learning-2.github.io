@@ -5,10 +5,40 @@ body {
 }
 
 h1 {
-  font-family: 'Roboto Slab', sans-serif;
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 58px;
+  /* font-family: 'Roboto Slab', sans-serif;
   color:#000;
-  font-size: 1rem;
+  font-size: 1rem; */
 
+}
+
+h2 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+h3 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
 }
 
 #navigation {
@@ -258,14 +288,14 @@ h1 {
   color: #3466bb;
 }
 
-h1,
+/* h1,
 .h1 {
   font-weight: 600;
   font-size: 2.75rem;
   font-family: Mulish, sans-serif;
-}
+} */
 
-h2,
+/* h2,
 .h2 {
   font-weight: 500;
   font-size: 1.87rem;
@@ -277,7 +307,7 @@ h3,
   font-weight: 500;
   font-size: 1.5rem;
   font-family: Mulish, sans-serif;
-}
+} */
 
 .dropdown-menu {
   min-width: 50px;
@@ -449,23 +479,23 @@ a {
   color: #545454;
 }
 
-.header1 {
+/* .header1 {
   font-family: 'Roboto Slab';
   font-style: normal;
   font-weight: 700;
   font-size: 44px;
   line-height: 58px;
-}
+} */
 
-.header2 {
+/* .header2 {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-}
+} */
 
-.header3 {
+/* .header3 {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -480,7 +510,7 @@ a {
   font-size: 16px;
   line-height: 22px;
   color: #FFFFFF;
-}
+} */
 
 
 .body1 {
