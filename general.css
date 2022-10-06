@@ -2,47 +2,33 @@ body {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-  /* font-family: 'Open Sans', sans-serif;
-  color: #000;
-  font-size: 1.125rem; */
+  font-size: 1.25rem;
+  line-height: 1.688rem;
 }
 
 h1 {
   font-family: 'Roboto Slab';
-  font-style: normal;
   font-weight: 700;
-  font-size: 44px;
-  line-height: 58px;
-  /* font-family: 'Roboto Slab', sans-serif;
-  color:#000;
-  font-size: 1rem; */
-
+  font-size: 2.75rem;
+  line-height: 3.625rem;
 }
 
 h2 {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 2.75rem;
 }
 
 h3 {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 h4 {
-  font-family: 'Open Sans';
-  font-style: normal;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 1rem;
+  line-height: 1.375rem;
   color: #FFFFFF;
 }
 
@@ -464,19 +450,14 @@ a {
 }
 
 .body-font-small {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 1.125rem;
+  line-height: 1.563rem;
 }
 
 .caption {
   font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
 }
 
 .thin-border {
