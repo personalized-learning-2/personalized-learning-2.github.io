@@ -245,7 +245,6 @@ ul.match-indent {
 }
 
 .lesson-structure-card {
-  margin-left: 2.5em;
   border: 1px solid #000000;
 }
 
@@ -312,5 +311,5 @@ ul.match-indent {
 
 .competency-dot {
   position: absolute;
-  left: 0%;
+  left: 4%;
 }

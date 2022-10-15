@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Open Sans';
   font-style: normal;
@@ -298,6 +302,10 @@ h4 {
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+
   .faq-title {
     font-size: 1.25rem;
   }
@@ -334,6 +342,10 @@ h4 {
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
   .debold {
     font-weight: 400;
   }
@@ -439,6 +451,10 @@ a {
 
 .t-purple {
   color: #B075DE;
+}
+
+.t-blue {
+  color: #5AB0FF;
 }
 
 .t-green {
