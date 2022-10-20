@@ -280,3 +280,9 @@ canvas {
   color: #000 !important;
   font-weight: bold !important;
 }
+
+.top-banner-text {
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
