@@ -1,14 +1,39 @@
+html {
+  font-size: 16px;
+}
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  color: #000;
-  font-size: 1.125rem;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.688rem;
 }
 
 h1 {
-  font-family: 'Roboto Slab', sans-serif;
-  color:#000;
-  font-size: 1rem;
+  font-family: 'Roboto Slab';
+  font-weight: 700;
+  font-size: 2.75rem;
+  line-height: 3.625rem;
+}
 
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.75rem;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.375rem;
+  color: #FFFFFF;
 }
 
 #navigation {
@@ -90,8 +115,6 @@ h1 {
 .footer-new {
   background-color: #525252;
   color: white;
-  font-size: 20px;
-  font-weight: 700;
 }
 
 #footer-email {
@@ -260,27 +283,6 @@ h1 {
   color: #3466bb;
 }
 
-h1,
-.h1 {
-  font-weight: 600;
-  font-size: 2.75rem;
-  font-family: Mulish, sans-serif;
-}
-
-h2,
-.h2 {
-  font-weight: 500;
-  font-size: 1.87rem;
-  font-family: Mulish, sans-serif;
-}
-
-h3,
-.h3 {
-  font-weight: 500;
-  font-size: 1.5rem;
-  font-family: Mulish, sans-serif;
-}
-
 .dropdown-menu {
   min-width: 50px;
   left: auto !important;
@@ -300,6 +302,10 @@ h3,
 }
 
 @media screen and (max-width: 576px) {
+  html {
+    font-size: 8px;
+  }
+
   .faq-title {
     font-size: 1.25rem;
   }
@@ -336,6 +342,10 @@ h3,
 }
 
 @media screen and (max-width: 768px) {
+  html {
+    font-size: 8px;
+  }
+
   .debold {
     font-weight: 400;
   }
@@ -443,6 +453,10 @@ a {
   color: #B075DE;
 }
 
+.t-blue {
+  color: #5AB0FF;
+}
+
 .t-green {
   color: #66AA5D;
 }
@@ -451,52 +465,15 @@ a {
   color: #545454;
 }
 
-.header1 {
-  font-family: 'Roboto Slab';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 58px;
-}
-
-.header2 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
-}
-
-.header3 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-}
-
-.body1 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 27px;
-}
-
-.body2 {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
+.body-font-small {
+  font-size: 1.125rem;
+  line-height: 1.563rem;
 }
 
 .caption {
   font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 19px;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
 }
 
 .thin-border {
@@ -516,3 +493,4 @@ a {
 #header {
   border-bottom: 5px solid rgba(253, 194, 71, 0.25);
 }
+
