@@ -36,6 +36,10 @@ h4 {
   color: #FFFFFF;
 }
 
+.faq-title {
+      cursor: pointer;
+}
+
 #navigation {
   padding-top: 30px;
   /*    padding-left: 5%;
@@ -307,7 +311,8 @@ h4 {
   }
 
   .faq-title {
-    font-size: 1.25rem;
+      cursor: pointer;
+      font-size: 1.25rem;
   }
 
   .home-slogan {
@@ -355,7 +360,8 @@ h4 {
   }
 
   .faq-title {
-    font-size: 1.25rem;
+      cursor: pointer;
+      font-size: 1.25rem;
   }
 
   .home-slogan {
