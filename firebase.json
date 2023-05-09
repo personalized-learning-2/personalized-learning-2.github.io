@@ -1,0 +1,25 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+  "redirects": [
+     {
+       "source": "/demo",
+       "destination": "https://plus.andrew.cmu.edu/demo",
+       "type": 301
+     }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5033
+    },
+    "ui": {
+      "enabled": true
+    }
+  }
+}
