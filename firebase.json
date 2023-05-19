@@ -8,9 +8,15 @@
     ],
   "redirects": [
      {
-       "source": "/demo",
-       "destination": "https://plus.andrew.cmu.edu/demo",
+       "source": "/training-demo",
+       "destination": "https://plus.andrew.cmu.edu/training-demo",
        "type": 301
+     }
+  ],
+  "rewrites": [
+     {
+       "source": "/demo",
+       "destination": "/training-demo"
      }
     ]
   },
